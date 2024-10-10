@@ -1,0 +1,119 @@
+body{
+    background-image: url("img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+  .login-main {
+    text-align: center;
+    margin-top: 10px;   
+    color: bisque;  
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-main form {
+    display: inline-block
+     
+}
+
+.login-main input, .login-main button {
+    display: block;       
+    margin: 10px auto;
+    margin-top: 5px;  
+    width: 300px;       
+    padding: 15px;       
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+
+}
+
+.login-main button {
+    margin-top: 3rem; /* Increased space below the button */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Button font */
+    font-size: 18px; /* Button font size */
+}
+
+.login-main input:focus, .login-main button:hover {
+    border-color: #007BFF; 
+}
+
+
+
+
+  .header {
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+      overflow: hidden;
+      background-color: rgb(124, 35, 76);
+      padding: 20px 10px;
+  }
+  
+  .header-Left {
+      display: flex; 
+      align-items: center; 
+  }
+  
+  .logo-img {
+      height: 70px;
+      width: 70px; 
+      border-radius: 50%; 
+      margin-right: 5px; 
+  }
+  .header-Right {
+      display: flex; 
+      align-items: center; 
+  }
+  
+  .header a {
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 25px;
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-left: 10px; /* Space between navigation links */
+  }
+  
+  .header a:hover {
+      background-color: rgba(201, 52, 114, 0.637);
+      color: white;
+  }
+  
+  .header a.active {
+      background-color: rgb(121, 7, 64);
+      color: white;
+  }
+  
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(66, 6, 41);
+      color: white;
+      text-align: center;
+      padding: 15px;
+  }
+  
+  #content {
+      color: rgb(252, 247, 247);
+      text-align: justify;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 75px;
+  }
+  
