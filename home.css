@@ -1,0 +1,17 @@
+.side-pic-container {
+    width: 100%; /* Adjust as needed */
+    max-width: 300px; /* Set a maximum width */
+    margin: auto; /* Center the container */
+}
+
+.side-pic {
+    width: 100%; /* Image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    
+}

@@ -1,3 +1,29 @@
+.side-pic-container {
+    width: 100%; /* Adjust as needed */
+    max-width: 400px; /* Set a maximum width */
+    margin: auto; /* Center the container */
+    margin-left: 40px;
+    margin-top: 8rem;
+    
+
+}
+
+.side-pic {
+    width: 100%; /* Image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 350px;
+}
+
+.title {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+
+
 body{
     background-image: url("img/home.jpg");
     background-repeat: no-repeat;
@@ -12,6 +38,9 @@ body{
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
+    border-color: bisque;
+    border-style: solid;
+    border-width: 2px;
 }
 
   .login-main {
@@ -20,6 +49,10 @@ body{
     color: bisque;  
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: solid;
+    border-color: bisque;
+    border-width: 2px;
+    padding: 2rem;
 }
 
 .login-main form {
