@@ -48,6 +48,6 @@ app.post('/login', async (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => {
+app.listen(6700, () => {
     console.log('Server running on http://localhost:6700');
 });
