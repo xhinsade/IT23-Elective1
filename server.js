@@ -1,53 +1,80 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
+const fs = require('fs');
+const bcrypt = require('bcryptjs');
 
 const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middleware
 app.use(bodyParser.json());
+app.use(express.static('public')); // Serve static files from the "public" folder
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/users', { useNewUrlParser: true, useUnifiedTopology: true });
+// Helper function to read users from JSON file
+const readUsers = () => {
+    if (!fs.existsSync('users.json')) {
+        return [];
+    }
+    const data = fs.readFileSync('users.json', 'utf8');
+    return JSON.parse(data);
+};
 
-// User Schema
-const userSchema = new mongoose.Schema({
-    username: String,
-    email: String,
-    password: String,
-});
-const User = mongoose.model('User', userSchema);
+// Helper function to write users to JSON file
+const writeUsers = (users) => {
+    fs.writeFileSync('users.json', JSON.stringify(users, null, 2));
+};
 
-// Sign Up Route
+// Signup route
 app.post('/signup', async (req, res) => {
     const { username, email, password } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = new User({ username, email, password: hashedPassword });
-    await newUser.save();
-    res.json({ success: true });
+    // Read existing users
+    const users = readUsers();
+
+    // Check if username or email already exists
+    if (users.find(user => user.username === username || user.email === email)) {
+        return res.status(400).json({ success: false, message: 'Username or email already exists.' });
+    }
+
+    try {
+        // Hash the password
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const newUser = { username, email, password: hashedPassword };
+
+        // Add the new user and save
+        users.push(newUser);
+        writeUsers(users);
+
+        return res.json({ success: true, message: 'User registered successfully!' });
+    } catch (error) {
+        console.error('Error during signup:', error);
+        return res.status(500).json({ success: false, message: 'Internal server error.' });
+    }
 });
 
-// Log In Route
+// Login route
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
-    const user = await User.findOne({ username });
 
+    // Read existing users
+    const users = readUsers();
+
+    // Find the user
+    const user = users.find(user => user.username === username);
     if (!user) {
-        return res.json({ success: false, message: 'User not found' });
+        return res.status(400).json({ success: false, message: 'User not found.' });
     }
 
-    const isValid = await bcrypt.compare(password, user.password);
-    if (!isValid) {
-        return res.json({ success: false, message: 'Invalid password' });
+    // Compare passwords
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+        return res.status(400).json({ success: false, message: 'Invalid credentials.' });
     }
 
-    // Generate JWT Token (optional)
-    const token = jwt.sign({ userId: user._id }, 'your_jwt_secret');
-    res.json({ success: true, token });
+    res.json({ success: true, message: 'Login successful!' });
 });
 
 // Start the server
-app.listen(00, () => {
-    console.log('Server running on http://localhost:6700');
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
