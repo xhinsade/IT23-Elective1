@@ -1,48 +1,140 @@
-<html>
-    <head>
-        <title> XhinSade Webpage </title>
-        <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CwinX</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 
-        </head>
-        
-        
-        <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-            <header>
-                <div class="header">
-                    <div class="header-Left">
-                        <img src="img/CwinX.png" alt="Logo" class="logo-img">
-                        <a href="img/CwinX.png" class="logo"> CwinX </a>
-                    </div>
-                <div class="header-Right">
-                    <a href="contact.html">Contact Us</a>
-                    <a href="about.html"> About Us</a>
-                    <a class="active" href="home.html">Home</a>
-                </div>
+<body>
+    <header>
+        <h1>Welcome to CwinX</h1>
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Cleaning</h2>
             </div>
-
-            <h1 class="title"> Welcome to CwinX</h1>
-            <div class = " text">
-
-                <div class=" section-text">
-                    <p> </p>
-
-                </div>
-
-
+            <div class="card-body">
+                <p>Thorough cleaning services for your home, from living rooms to bathrooms.</p>
+                <a href="booking.html" class="btn">Book Now</a>
             </div>
-        
-            </header>
-        
-           
-        
-            <footer class="">
-                <div class="footer">
-                    © Copyright <strong><span> CwinX </span></strong>. All Rights Reserved
-                </div>
-            </footer>
-        
-        
-        
-        </body>
-        </html>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Laundry</h2>
+            </div>
+            <div class="card-body">
+                <p>Professional laundry services to ensure your clothes are fresh and clean.</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Organization</h2>
+            </div>
+            <div class="card-body">
+                <p>Expert organization services to declutter and organize your spaces.</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Deep Cleaning</h2>
+            </div>
+            <div class="card-body">
+                <p>Intensive cleaning for every nook and cranny of your home.</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Move-In/Move-Out Cleaning</h2>
+            </div>
+            <div class="card-body">
+                <p>Cleaning services tailored for moving in or out of a home.</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            © Copyright <strong><span>CwinX</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
