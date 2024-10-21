@@ -4,42 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - XhinSade</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
+<body>
     <header>
-        
-
-        <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-            
-                <div class="header">
-                    <div class="header-Left">
-                        <img src="img/CwinX.png" alt="Logo" class="logo-img">
-                        <a href="img/CwinX.png" class="logo"> CwinX House Keeping </a>
-                    </div>
+        <div class="header">
+            <div class="header-Left">
+                <img src="img/CwinX.png" alt="Logo" class="logo-img">
+                <a href="img/CwinX.png" class="logo">CwinX House Keeping</a>
             </div>
-
+        </div>
     </header>
-    <div class="container"> 
-        <main class="login-main">
-            <div id="notification" style="display:none; margin-top: 20px;"></div> <!-- Notification div -->
+
+    <div class="container">
+        <!-- Login Form -->
+        <main class="login-main" id="login-main">
+            <h2>Login</h2>
+            <div id="login-notification" style="display:none; margin-top: 20px;"></div>
             <form id="loginForm" onsubmit="handleLogin(event)">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <label for="login-password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="login-password" name="password" required>
+                    <span id="login-togglePassword" class="toggle-password">👁️</span>
+                </div>
                 <button type="submit" class="btn btn-primary">LOG IN</button>
             </form>
+            <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up here</a></p>
+        </main>
+
+        <!-- Signup Form -->
+        <main class="login-main" id="signup-main" style="display: none;">
+            <h2>Sign Up</h2>
+            <div id="signup-notification" style="display:none; margin-top: 20px;"></div>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="username" required>
+
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="signup-password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="signup-password" name="password" required>
+                    <span id="signup-togglePassword" class="toggle-password">👁️</span>
+                </div>
+                <button type="submit" class="btn btn-primary">SIGN UP</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="toggleForms()">Log in here</a></p>
         </main>
     </div>
-    
-    <footer class="">
+
+    <footer>
         <div class="footer">
-            © Copyright <strong><span> CwinX House Keeping </span></strong>. All Rights Reserved
+            © Copyright <strong><span>CwinX House Keeping</span></strong>. All Rights Reserved
         </div>
     </footer>
 
     <script src="login.js" defer></script>
-
 </body>
 </html>
