@@ -1,17 +1,132 @@
-.side-pic-container {
-    width: 100%; /* Adjust as needed */
-    max-width: 300px; /* Set a maximum width */
-    margin: auto; /* Center the container */
+/* General body styling */
+body {
+    background-image: url("./img/bg-home.jpeg"); /* Use your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.side-pic {
-    width: 100%; /* Image takes the full width of the container */
-    height: auto; /* Maintain aspect ratio */
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #2E5E4E; /* Forest Green for header background */
+    padding: 20px 10px;
+    font-size: 18px;
 }
 
-.title {
+.header-Left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Link styling */
+.header a {
+    color: #F5F5E9; /* Cream White for links */
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.header a:hover {
+    background-color: rgba(121, 7, 64, 0.637);
+}
+
+/* Container that centers the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid #A9B7A3; /* Soft Sage Green */
+}
+
+/* Main form styling */
+.login-main {
+    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
+    text-align: center;
+    color: #2E5E4E; /* Forest Green for text */
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 350px;
+}
+
+/* Button styling */
+.login-main .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(201, 52, 114, 0.8);
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 45px;
-    
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-main .btn:hover {
+    background: rgba(201, 52, 114, 1);
+}
+
+/* Footer styling */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7A8865; /* Dusty Olive for footer */
+    color: #F5F5E9; /* Cream White for footer text */
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Services section */
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to the next line */
+    justify-content: center; /* Center the cards */
+    padding: 20px;
+    color: rgb(252, 247, 247);
+    text-align: center;
+}
+
+.service-card {
+    background-color: rgba(124, 35, 76, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px; /* Card width */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.service-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.rating {
+    font-size: 18px; /* Adjusted rating size */
+    margin-top: 10px;
 }
