@@ -1,0 +1,161 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("./img/bg-contact")
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #3b9b40;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header-right a:hover, .header-right a.active {
+    background-color: #2d7030;
+}
+
+/* Main Content Styling */
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/cleaning-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.hero .btn:hover {
+    background-color: #C70039;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f7f7f7;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefit {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.benefit h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+}
+
+.contact-info h2, .contact-info h3 {
+    color: #FF5733;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.contact-details, .social-media {
+    margin: 20px 0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

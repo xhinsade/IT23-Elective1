@@ -3,67 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CwinX</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        .contact-info {
-            margin: 20px 0;
-        }
-    </style>
+    <title>Home - CwinX Housekeeping Agency</title>
+    <link rel="stylesheet" type="text/css" href="contact.css" media="screen">
 </head>
 
 <body>
+    <!-- Header Section with Logo and Navigation -->
     <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About Us</a>
-        </nav>
+        <div class="header">
+            <div class="header-left">
+                <img src="img/CwinX.png" alt="CwinX Logo" class="logo-img">
+                <a href="home.html" class="logo">CwinX</a>
+            </div>
+            <div class="header-right">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a class="active" href="home.html">Home</a>
+            </div>
+        </div>
     </header>
 
-    <div class="content">
-        <h2>Get in Touch</h2>
-        <p>We would love to hear from you! If you have any questions or need further information, feel free to reach out to us.</p>
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="hero">
+            <h1>Welcome to CwinX Housekeeping Agency</h1>
+            <p>Your trusted partner in keeping your home spotless and organized. We provide reliable and professional housekeeping services tailored to your needs.</p>
+            <a href="services.html" class="btn">Explore Our Services</a>
+        </section>
 
-        <div class="contact-info">
-            <h3>Contact Details</h3>
-            <p><strong>Phone:</strong> 09123456789</p>
-            <p><strong>Email:</strong> <a href="mailto:example@email.com">example@email.com</a></p>
-        </div>
+        <section class="about-us">
+            <h2>Why Choose CwinX?</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Professional Staff</h3>
+                    <p>Our team is composed of experienced and trustworthy housekeeping professionals who are committed to delivering high-quality services every time.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Customized Cleaning Plans</h3>
+                    <p>We tailor our cleaning solutions to fit your unique needs, ensuring your home receives the care it deserves.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Affordable Rates</h3>
+                    <p>Get top-notch housekeeping services at competitive prices. We offer packages that suit various budgets without compromising quality.</p>
+                </div>
+            </div>
+        </section>
 
-        <h3>Follow Us on Social Media</h3>
-        <p>
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
-        </p>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, need further information, or want to book our services, feel free to contact us. We are here to help!</p>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <p><strong>Phone:</strong> 09123456789</p>
+                <p><strong>Email:</strong> <a href="mailto:info@cwinsx.com">info@cwinx.com</a></p>
+            </div>
+
+            <div class="social-media">
+                <h3>Follow Us on Social Media</h3>
+                <p>Stay updated on our latest offers and services by following us on:</p>
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </div>
+        </section>
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <div class="footer">
-            © Copyright <strong><span>CwinX</span></strong>. All Rights Reserved
+            <p>© Copyright <strong>CwinX Housekeeping Agency</strong>. All Rights Reserved</p>
+            <p><a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 </body>
