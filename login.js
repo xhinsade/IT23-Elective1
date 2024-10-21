@@ -38,7 +38,7 @@ function handleLogin(event) {
     event.preventDefault();
     const username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
-    console.log('Login Username:', usernam);
+    console.log('Login Username:', username);
     console.log('Login Password:', password);
     // Further logic (e.g., server request) goes here
 }
