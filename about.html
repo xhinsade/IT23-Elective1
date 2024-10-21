@@ -3,62 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - CwinX</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <title>Your Page Title - CwinX Housekeeping Agency</title>
+    <link rel="stylesheet" type="text/css" href="about.css" media="screen"> <!-- Link to the same CSS file -->
 </head>
 
 <body>
-    <header>
-        <h1>About Us</h1>
-        <nav>
-            <a href="home.html">Home</a>
+    <header class="header">
+        <div class="header-left">
+            <img src="../img/logo.png" alt="CwinX Logo" class="logo-img"> <!-- Adjust the logo image path -->
+            <h1>CwinX</h1>
+        </div>
+        <div class="header-right">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
-        </nav>
+        </div>
     </header>
 
-    <div class="content">
-        <h2>Welcome to CwinX</h2>
-        <p>At CwinX, we are dedicated to providing high-quality housekeeping services to ensure your home is always clean and organized. Our team of professionals is trained to deliver exceptional service that meets the highest standards of cleanliness.</p>
-        
-        <h3>Our Mission</h3>
-        <p>To create a clean and comfortable living environment for our clients through reliable and efficient housekeeping services.</p>
-        
-        <h3>Our Values</h3>
-        <ul>
-            <li><strong>Integrity:</strong> We believe in being honest and transparent in our services.</li>
-            <li><strong>Excellence:</strong> We strive to exceed our clients' expectations with every service.</li>
-            <li><strong>Customer Satisfaction:</strong> Our clients' happiness is our top priority.</li>
-        </ul>
+    <div class="main-content">
+        <div class="hero">
+            <h1>Welcome to CwinX</h1>
+            <p>Your trusted partner in maintaining a clean and organized home.</p>
+        </div>
+
+        <div class="about-us">
+            <h2>Why Choose CwinX?</h2>
+            <div class="benefits">
+                <div class="benefit card">
+                    <h3>Professional Staff</h3>
+                    <p>Our team consists of experienced and trustworthy housekeeping professionals who are committed to delivering high-quality services every time.</p>
+                </div>
+                <div class="benefit card">
+                    <h3>Customized Cleaning Plans</h3>
+                    <p>We tailor our cleaning solutions to fit your unique needs, ensuring your home receives the care it deserves.</p>
+                </div>
+                <div class="benefit card">
+                    <h3>Affordable Rates</h3>
+                    <p>Get top-notch housekeeping services at competitive prices. We offer packages that suit various budgets without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission-values">
+            <h3>Our Mission and Values</h3>
+            <p>At CwinX, our mission is to create a clean and comfortable living environment for our clients through reliable and efficient housekeeping services.</p>
+            <div class="benefits">
+                <div class="benefit card">
+                    <h3>Integrity</h3>
+                    <p>We believe in being honest and transparent in our services. Our commitment to integrity ensures you can trust us with your home.</p>
+                </div>
+                <div class="benefit card">
+                    <h3>Excellence</h3>
+                    <p>We strive to exceed our clients' expectations with every service. Our trained professionals deliver quality that speaks for itself.</p>
+                </div>
+                <div class="benefit card">
+                    <h3>Customer Satisfaction</h3>
+                    <p>Our clients' happiness is our top priority. We listen to your feedback and continuously improve our services to meet your needs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions or would like to know more about our services, feel free to <a href="contact.html" class="btn">Contact Us</a>.</p>
+        </div>
     </div>
 
-    <footer>
-        <div class="footer">
-            © Copyright <strong><span>CwinX</span></strong>. All Rights Reserved
-        </div>
+    <footer class="footer">
+        © Copyright <strong><span>CwinX Housekeeping Agency</span></strong>. All Rights Reserved
     </footer>
 </body>
 </html>
