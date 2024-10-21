@@ -1,0 +1,123 @@
+/* General Body Styling */
+body {
+    background-image: url("../img/Luxe-feminine.jpeg"); /* Background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align at the top for a better layout */
+    min-height: 100vh;
+    margin: 0;
+    color: #333; /* Default text color */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(46, 94, 78, 0.85); /* Semi-transparent Forest Green */
+    padding: 15px 30px; /* Increased padding for better aesthetics */
+    font-size: 20px; /* Slightly larger font size for readability */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px; /* Increased logo size */
+    width: 70px; /* Increased logo size */
+    border-radius: 50%;
+    margin-right: 15px; /* More space between logo and text */
+}
+
+.header-right {
+    display: flex; /* Make the right side also a flex container */
+    gap: 20px; /* Space between the links */
+}
+
+.header-right a {
+    color: #F5F5E9; /* Cream White */
+    text-decoration: none;
+    padding: 12px 25px; /* Adjusted padding for consistency */
+    font-size: 18px; /* Font size */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+    display: flex; /* Allow content to be flexibly sized */
+    align-items: center; /* Center the text vertically */
+}
+
+.header-right a:hover,
+.header-right a.active {
+    background-color: rgba(201, 52, 114, 0.8); /* Pinkish color */
+    transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content */
+    padding: 40px; /* Increased padding for a more spacious layout */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for content area */
+    border-radius: 10px; /* Rounded corners for the content area */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 900px; /* Limit width for better readability */
+    margin: auto; /* Center the content */
+}
+
+.main-content h1 {
+    font-size: 2.5em; /* Larger title */
+    color: #2E5E4E; /* Forest Green */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.main-content p {
+    font-size: 1.2em; /* Larger paragraph text */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Terms Content Styling */
+/* Terms Content Styling */
+.terms-content {
+    text-align: left;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px; /* Space around content */
+}
+
+.terms-content h2 {
+    color: #2E5E4E; /* Forest Green for the section titles */
+    font-size: 1.8em; /* Increased size for section titles */
+    margin-top: 20px; /* Space above section titles */
+    text-align: left; /* Align text to the left */
+    align-items: left;
+}
+
+.terms-content p {
+    color: #333; /* Dark text color for the paragraphs */
+    margin-bottom: 15px; /* Space between paragraphs */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+    margin: 40px 0; /* Space around the section */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #7A8865; /* Dusty Olive */
+    color: #F5F5E9; /* Cream White */
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    position: relative; /* Ensures it stays at the bottom */
+    bottom: 0; /* Anchors the footer to the bottom */
+    width: 100%; /* Ensures the footer takes full width */
+}
