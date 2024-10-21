@@ -127,13 +127,28 @@ body {
 .header-right a {
     padding: 10px 15px; /* Add padding to each link for better click area */
 }
+.logo {
+    font-size: 150px; /* Adjust the size of the font as needed */
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Set your desired font family */
+    font-weight: bolder; /* Optional: Make the font bold */
+    color: #F5F5E9; /* Set the text color */
+    text-decoration: none; /* Remove underline from the link */
+    margin-left: 10px; /* Optional: Add space between the logo image and the text */
+    transition: color 0.3s; /* Optional: Add a transition effect */
+}
+
+/* Optional: Add a hover effect */
+.logo:hover {
+    color: #D9C187; /* Change color on hover */
+}
+
 
 
 .logo-img {
     height: 65px;
     width: 65px;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 /* Link styling */
