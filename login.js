@@ -33,24 +33,63 @@ document.addEventListener('DOMContentLoaded', function () {
     togglePasswordVisibility('signup-password', 'signup-togglePassword');
 });
 
-// Example login handling (you should customize this logic)
-function handleLogin(event) {
+// Example login handling
+async function handleLogin(event) {
     event.preventDefault();
     const username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
-    console.log('Login Username:', username);
-    console.log('Login Password:', password);
-    // Further logic (e.g., server request) goes here
+
+    try {
+        const response = await fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password }),
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            alert('Login successful!');
+            window.location.href = 'home.html'; // Change this to your desired path
+        } else {
+            const notification = document.getElementById('login-notification');
+            notification.style.display = 'block';
+            notification.textContent = data.message;
+        }
+    } catch (error) {
+        console.error('Error during login:', error);
+        alert('Login failed due to an error. Please try again later.');
+    }
 }
 
-// Example signup handling (you should customize this logic)
-function handleSignup(event) {
+// Example signup handling
+async function handleSignup(event) {
     event.preventDefault();
     const username = document.getElementById('signup-username').value;
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
-    console.log('Signup Username:', username);
-    console.log('Signup Email:', email);
-    console.log('Signup Password:', password);
-    // Further logic (e.g., server request) goes here
+
+    try {
+        const response = await fetch('/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, email, password }),
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            alert('Signup successful!');
+            window.location.href = 'logi.html'; // Change this to your desired path
+        } else {
+            const notification = document.getElementById('signup-notification');
+            notification.style.display = 'block';
+            notification.textContent = data.message;
+        }
+    } catch (error) {
+        console.error('Error during signup:', error);
+        alert('Signup failed due to an error. Please try again later.');
+    }
 }
