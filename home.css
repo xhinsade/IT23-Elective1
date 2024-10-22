@@ -1,4 +1,4 @@
-/* General body styling */
+/* ------------------ General Body Styling ------------------ */
 body {
     background-image: url("./img/bg-home.jpeg"); /* Use your image URL */
     background-repeat: no-repeat;
@@ -10,96 +10,7 @@ body {
     margin: 0;
 }
 
-/* Container that centers the main content */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border: 2px solid #A9B7A3; /* Soft Sage Green */
-    margin-top: 2rem
-}
-
-/* Main content styling */
-.login-main {
-    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
-    text-align: center;
-    align-content: justify;
-    color: #2E5E4E; /* Forest Green for text */
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    width: 500px;
-}
-
-/* Service Image Styling */
-.service-image {
-    width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Space around the image */
-}
-
-/* Button styling */
-.btn {
-    background-color: #D9C187; /* Pale Gold for button */
-    color: #2E5E4E; /* Forest Green for button text */
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #7A8865; /* Dusty Olive for hover effect */
-}
-
-/* Call-to-action section */
-.cta {
-    text-align: center; /* Centered text */
-    padding: 40px 20px; /* Padding for spacing */
-    background-color: rgba(255, 255, 255, 0.9); /* Light translucent background */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px; /* Space around the section */
-}
-
-/* Call-to-action heading and paragraph styling */
-.cta h2 {
-    color: #2E5E4E; /* Forest Green for the title */
-}
-
-.cta p {
-    color: #333; /* Dark text color for paragraphs */
-}
-
-/* List styling */
-.cta ul {
-    list-style: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-}
-
-.cta li {
-    margin-bottom: 10px; /* Space between list items */
-}
-
-/* Footer styling */
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #7A8865; /* Dusty Olive for footer */
-    color: #F5F5E9; /* Cream White for footer text */
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
-}
-
-
-/* Header styling */
+/* ------------------ Header Styling ------------------ */
 .header {
     display: flex;
     justify-content: space-between; /* Space between left and right sections */
@@ -107,55 +18,26 @@ body {
     background-color: #2E5E4E; /* Forest Green for header background */
     padding: 20px 10px;
     font-size: 18px;
+    border-bottom: 5px solid #D9C187;
+    border-top: 5px solid #D9C187;
 }
 
-/* Adjust header-left styling */
 .header-left {
-    display: flex; /* Ensure it uses flexbox for alignment */
-    align-items: center; /* Vertically center the items */
-    justify-content:left ; /* Horizontally center the items */
-    flex-grow: 1; /* Allow it to grow and take available space */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: left; /* Align to the left */
+    flex-grow: 1; /* Allow to grow */
 }
 
-/* Adjust header-right styling */
 .header-right {
-    display: flex; /* Make it a flex container */
-    gap: 15px; /* Space between the links */
+    display: flex; /* Flex container */
+    gap: 15px; /* Space between links */
 }
 
-/* Optional: Adjust individual link styles */
-.header-right a {
-    padding: 10px 15px; /* Add padding to each link for better click area */
-}
-.logo {
-    font-size: 150px; /* Adjust the size of the font as needed */
-    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Set your desired font family */
-    font-weight: bolder; /* Optional: Make the font bold */
-    color: #F5F5E9; /* Set the text color */
-    text-decoration: none; /* Remove underline from the link */
-    margin-left: 10px; /* Optional: Add space between the logo image and the text */
-    transition: color 0.3s; /* Optional: Add a transition effect */
-}
-
-/* Optional: Add a hover effect */
-.logo:hover {
-    color: #D9C187; /* Change color on hover */
-}
-
-
-
-.logo-img {
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    margin-right: 3px;
-}
-
-/* Link styling */
 .header a {
     color: #F5F5E9; /* Cream White for links */
     text-align: center;
-    padding: 12px;
+    padding: 3px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -166,9 +48,135 @@ body {
     background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
 }
 
-/* Footer link styling */
-.footer-links a {
-    color: #F5F5E9; /* Cream White for footer links */
+/* ------------------ Logo Styling ------------------ */
+.logo {
+    font-size: 150px; /* Font size */
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Font family */
+    font-weight: bolder; /* Bold text */
+    color: #F5F5E9; /* Text color */
+    text-decoration: none; /* Remove underline */
+    margin-left: 10px; /* Space between logo image and text */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.logo:hover {
+    color: #D9C187; /* Hover color */
+}
+
+.logo-img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+/* ------------------ Main Content Styling ------------------ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid #A9B7A3; /* Soft Sage Green */
+    margin-top: 2rem;
+}
+
+.login-main {
+    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
+    text-align: center;
+    color: #2E5E4E; /* Forest Green */
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 500px;
+}
+
+/* ------------------ Service Image Styling ------------------ */
+.service-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space around the image */
+}
+
+/* ------------------ Button Styling ------------------ */
+.btn {
+    background-color: #D9C187; /* Pale Gold */
+    color: #2E5E4E; /* Forest Green for text */
+    padding: 12px 30px;
     text-decoration: none;
-    margin: 0 5px; /* Spacing between links */
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7A8865; /* Dusty Olive on hover */
+}
+
+/* ------------------ Call-to-Action (CTA) Styling ------------------ */
+.cta {
+    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
+    text-align: center;
+    color: #2E5E4E; /* Forest Green */
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for floating effect */
+    padding: 40px 20px; /* Padding for spacing */
+    margin: 20px; /* Space around the section */
+    
+}
+
+.cta h2 {
+    color: #2E5E4E; /* Forest Green */
+}
+
+.cta p {
+    color: #2E5E4E;
+}
+
+.cta ul {
+  
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    border-top: solid;
+    border-top-color: #2E5E4E;
+    border-top-style: dashed;
+    
+}
+
+.cta li {
+    margin-top: 1rem;
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* ------------------ Footer Styling ------------------ */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7A8865; /* Dusty Olive */
+    color: #F5F5E9; /* Cream White */
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #2E5E4E;
+    text-decoration: none;
+    margin: 0 5px; /* Space between links */
+}
+
+/* ------------------ Header-left h1 Styling ------------------ */
+.header-left h1 {
+    font-size: 35px; /* Font size */
+    color: #F5F5E9; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-style: normal; /* Not italic */
+    font-weight: bolder; /* Bold */
+    margin-left: 10px; /* Left margin */
 }

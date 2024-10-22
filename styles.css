@@ -60,20 +60,43 @@ body{
 
 
 
-  .header {
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center;
-      overflow: hidden;
-      background-color: rgb(124, 35, 76);
-      padding: 20px 10px;
-  }
-  
-  .header-Left {
-      display: flex; 
-      align-items: center; 
-  }
-  
+/* ------------------ Header Styling ------------------ */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center items */
+    background-color: #2E5E4E; /* Forest Green for header background */
+    padding: 20px 10px;
+    font-size: 18px;
+    border-bottom: 5px solid #D9C187;
+    border-top: 5px solid #D9C187;
+}
+
+.header-left {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: left; /* Align to the left */
+    flex-grow: 1; /* Allow to grow */
+}
+
+.header-right {
+    display: flex; /* Flex container */
+    gap: 15px; /* Space between links */
+}
+
+.header a {
+    color: #F5F5E9; /* Cream White for links */
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.header a:hover {
+    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+}
   .logo-img {
       height: 70px;
       width: 70px; 
