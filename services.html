@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - CwinX</title>
+    <title>Service - CwinX</title>
     <link rel="stylesheet" type="text/css" href="services.css" media="screen">
 </head>
 
 <body>
-  <!-- Header Section -->
-<div class="header">
-  <div class="header-left">
-    <img src="img/CwinX.png" alt="CwinX Logo" class="logo-img">
-    <h1> CwinX </h1>
-  </div>
-  <div class="header-right">
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-    <a class="active" href="home.html">Home</a>
-  </div>
-</div>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-left">
+            <img src="img/CwinX.png" alt="CwinX Logo" class="logo-img">
+            <h1>CwinX</h1>
+        </div>
+        <div class="header-right">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="home.html">Home</a>
+        </div>
+    </div>
 
     <div class="container">
         <h2>Our Services</h2>
         <p>At CwinX, we offer a wide range of housekeeping services tailored to meet your needs. Our dedicated team ensures your home is clean, organized, and comfortable. Explore our services below:</p>
 
-        <div class="card-container">
+        <div class="card-container" id="cardContainer">
+            <!-- Cards for Services -->
             <div class="card">
                 <img src="img/cleaning.jpeg" alt="Cleaning Service" class="card-image">
                 <div class="card-content">
@@ -71,7 +72,6 @@
                 </div>
             </div>
 
-            <!-- New Services Added -->
             <div class="card">
                 <img src="img/window_cleaning.jpeg" alt="Window Cleaning Service" class="card-image">
                 <div class="card-content">
@@ -81,12 +81,22 @@
                 </div>
             </div>
         </div>
+
+        <button id="prevBtn" class="btn">Previous</button>
+        <button id="nextBtn" class="btn">Next</button>
+
     </div>
 
     <footer>
         <div class="footer">
-            © Copyright <strong><span>CwinX</span></strong>. All Rights Reserved
+            <p>© Copyright <strong>CwinX Housekeeping Agency</strong>. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="terms.html">Terms & Conditions</a> |
+                <a href="policy.html">Privacy Policy</a>
+            </div>
         </div>
     </footer>
+
+    <script src="services.js"></script>
 </body>
 </html>
