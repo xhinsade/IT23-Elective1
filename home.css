@@ -75,10 +75,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    border: 2px solid #A9B7A3; /* Soft Sage Green */
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* Add margin to bottom for separation from footer */
+    flex-direction: column; /* Ensure it stacks vertically */
+    min-height: 80vh; /* Adjust to ensure enough height for content */
 }
+
 
 .login-main {
     background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
@@ -155,15 +157,16 @@ body {
 
 /* ------------------ Footer Styling ------------------ */
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #7A8865; /* Dusty Olive */
-    color: #F5F5E9; /* Cream White */
+    background-color: #7A8865;
+    color: #F5F5E9;
     text-align: center;
     font-size: 13px;
+    padding: 20px 0; /* Top and bottom padding */
+    width: 100%;
+    position: relative;
+    margin-top: 20px; /* Add margin on top to separate it from content above */
 }
+
 
 .footer-links a {
     color: #2E5E4E;
