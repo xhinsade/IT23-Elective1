@@ -1,25 +1,22 @@
-let currentCardIndex = 0;
-const cards = document.querySelectorAll('.card');
+let currentIndex = 0; // Track the currently displayed card
+const cards = document.querySelectorAll('.card'); // Select all cards
 const totalCards = cards.length;
 
-// Function to show the card based on the current index
-function showCard(index) {
-    cards.forEach((card, i) => {
-        card.style.display = (i === index) ? 'block' : 'none'; // Show only the current card
-    });
-}
+// Initially hide all cards except the first one
+cards.forEach((card, index) => {
+    card.style.display = index === currentIndex ? 'block' : 'none';
+});
 
-// Next button event listener
+// Show the next card
 document.getElementById('nextBtn').addEventListener('click', () => {
-    currentCardIndex = (currentCardIndex + 1) % totalCards; // Increment index and loop back if at end
-    showCard(currentCardIndex); // Show the current card
+    cards[currentIndex].style.display = 'none'; // Hide current card
+    currentIndex = (currentIndex + 1) % totalCards; // Move to the next card
+    cards[currentIndex].style.display = 'block'; // Show next card
 });
 
-// Previous button event listener
+// Show the previous card
 document.getElementById('prevBtn').addEventListener('click', () => {
-    currentCardIndex = (currentCardIndex - 1 + totalCards) % totalCards; // Decrement index and loop back if at start
-    showCard(currentCardIndex); // Show the current card
+    cards[currentIndex].style.display = 'none'; // Hide current card
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards; // Move to the previous card
+    cards[currentIndex].style.display = 'block'; // Show previous card
 });
-
-// Show the first card on initial load
-showCard(currentCardIndex);
