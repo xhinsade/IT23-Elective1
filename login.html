@@ -7,14 +7,12 @@
     <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="header-left">
-                <img src="images/logo.png" alt="Logo" class="logo-img">
-                <a href="images/logo.png" class="ViewLogo">CwinX</a>
-            </div>
+    <div class="header">
+        <div class="header-left">
+            <img src="images/logo.png" alt="CwinX Logo" class="logo-img">
+            <h1>CwinX</h1>
         </div>
-    </header>
+    </div>
 
     <div class="container">
         <!-- Login Form -->
@@ -33,7 +31,7 @@
                         <img id="toggleLoginPassword" class="toggle-password" src="images/hidePassword.png" alt="Toggle Password Visibility">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">LOG IN</button>
+                <button type="submit">LOG IN</button>
             </form>
             <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up here</a></p>
         </main>
@@ -41,7 +39,6 @@
         <!-- Signup Form -->
         <main class="login-main" id="signup-main" style="display: none;">
             <h2>Sign Up</h2>
-            <div id="signup-notification" style="display:none; margin-top: 20px;"></div>
             <form id="signupForm" onsubmit="handleSignup(event)">
                 <div class="form-group">
                     <label for="signup-username">Username:</label>
@@ -58,16 +55,14 @@
                         <img id="toggleSignupPassword" class="toggle-password" src="images/hidePassword.png" alt="Toggle Password Visibility">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">SIGN UP</button>
+                <button type="submit">SIGN UP</button>
             </form>
             <p>Already have an account? <a href="#" onclick="toggleForms()">Log in here</a></p>
         </main>
     </div>
 
-    <footer>
-        <div class="footer">
-            © Copyright <strong><span>CwinX House Keeping</span></strong>. All Rights Reserved
-        </div>
+    <footer class="footer">
+        © Copyright <strong><span>CwinX House Keeping</span></strong>. All Rights Reserved
     </footer>
 
     <script src="login.js" defer></script>
