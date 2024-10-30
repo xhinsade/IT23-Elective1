@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    background-image: url("./img/bg-home.jpeg"); /* Use your image URL */
+    background-image: url("./images/bg-home.jpeg"); /* Use your image URL */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
