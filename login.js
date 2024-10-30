@@ -57,3 +57,23 @@ function handleLogin(event) {
         notification.textContent = 'Invalid username or password.';
     }
 }
+
+// Toggle password visibility for login form
+const toggleLoginPassword = document.getElementById('toggleLoginPassword');
+const loginPasswordField = document.getElementById('login-password');
+
+toggleLoginPassword.addEventListener('click', function () {
+    const type = loginPasswordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    loginPasswordField.setAttribute('type', type);
+    this.src = type === 'password' ? 'images/hidePassword.png' : 'images/seePassword.png'; // Change image based on visibility
+});
+
+// Toggle password visibility for signup form
+const toggleSignupPassword = document.getElementById('toggleSignupPassword');
+const signupPasswordField = document.getElementById('signup-password');
+
+toggleSignupPassword.addEventListener('click', function () {
+    const type = signupPasswordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    signupPasswordField.setAttribute('type', type);
+    this.src = type === 'password' ? 'images/hidePassword.png' : 'images/seePassword.png'; // Change image based on visibility
+});

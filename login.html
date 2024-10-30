@@ -6,13 +6,12 @@
     <title>Login - XhinSade</title>
     <link rel="stylesheet" type="text/css" href="login.css">
 </head>
-
 <body>
     <header>
         <div class="header">
-            <div class="header-Left">
+            <div class="header-left">
                 <img src="images/logo.png" alt="Logo" class="logo-img">
-                <a href="images/CwinX.png" class="logo">CwinX House Keeping</a>
+                <a href="images/logo.png" class="logo">CwinX</a>
             </div>
         </div>
     </header>
@@ -23,13 +22,16 @@
             <h2>Login</h2>
             <div id="login-notification" style="display:none; margin-top: 20px;"></div>
             <form id="loginForm" onsubmit="handleLogin(event)">
-                <label for="login-username">Username:</label>
-                <input type="text" id="login-username" name="username" required>
-
-                <label for="login-password">Password:</label>
-                <div class="password-container">
-                    <input type="password" id="login-password" name="password" required>
-                    <span id="login-togglePassword" class="toggle-password">👁️</span>
+                <div class="form-group">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="login-password" name="password" required>
+                        <img id="toggleLoginPassword" class="toggle-password" src="images/hidePassword.png" alt="Toggle Password Visibility">
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">LOG IN</button>
             </form>
@@ -41,16 +43,20 @@
             <h2>Sign Up</h2>
             <div id="signup-notification" style="display:none; margin-top: 20px;"></div>
             <form id="signupForm" onsubmit="handleSignup(event)">
-                <label for="signup-username">Username:</label>
-                <input type="text" id="signup-username" name="username" required>
-
-                <label for="signup-email">Email:</label>
-                <input type="email" id="signup-email" name="email" required>
-
-                <label for="signup-password">Password:</label>
-                <div class="password-container">
-                    <input type="password" id="signup-password" name="password" required>
-                    <span id="signup-togglePassword" class="toggle-password">👁️</span>
+                <div class="form-group">
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="signup-password" name="password" required>
+                        <img id="toggleSignupPassword" class="toggle-password" src="images/hidePassword.png" alt="Toggle Password Visibility">
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">SIGN UP</button>
             </form>

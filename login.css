@@ -15,8 +15,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     height: 100vh;
     border: 2px solid #A9B7A3; /* Soft Sage Green */
+    box-sizing: border-box;
 }
 
 /* Main form styling */
@@ -30,37 +32,62 @@ body {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* Input and button styling */
-.login-main input, .login-main button {
+.login-main input {
     display: block;
     margin: 10px auto;
-    width: 300px;
-    padding: 15px;
+    width: 300px; /* Fixed width for input fields */
+    height: 40px; /* Fixed height for input fields */
+    padding: 10px; /* Padding inside the input */
     border: 1px solid #A9B7A3; /* Soft Sage Green for input borders */
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button styling */
+.login-main button {
+    margin-top: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #D9C187; /* Pale Gold for button */
+    color: #2E5E4E; /* Forest Green for button text */
+    border: none;
+    cursor: pointer;
+    width: 300px; /* Fixed width for button */
+    height: 40px; /* Fixed height for button */
 }
 
 /* Styling the password container for toggle visibility */
 .password-container {
     position: relative;
     display: inline-block;
+    width: 100%; /* Ensure full width of the container */
+    max-width: 300px; /* Fixed max width */
 }
 
-input[type="password"] {
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
     padding-right: 40px; /* Adjust padding to make space for the icon */
+    box-sizing: border-box; /* Make sure padding doesn't change width */
 }
 
+/* Toggle icon styling */
 .toggle-password {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    width: 24px; /* Consistent size for the icon */
+    height: 24px;
 }
+
 /* Button styling */
 .login-main button {
     margin-top: 3rem;
@@ -78,6 +105,13 @@ input[type="password"] {
 
 .login-main input:focus {
     border-color: #2E5E4E; /* Forest Green for focused input border */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .login-main input, .login-main button {
+        width: 90%; /* Adjust width for smaller screens */
+    }
 }
 
 /* Header styling */
