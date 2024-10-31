@@ -110,8 +110,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #2E5E4E; /* Forest Green */
-    padding: 10px;
-    font-size: 18px;
+    padding: 2px;
     border-bottom: 5px solid white;
 }
 
@@ -123,42 +122,12 @@ body {
 }
 
 .header-left h1 {
-    font-size: 35px;
+    font-size: 25px;
     color: #F5F5E9; /* Cream White */
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    margin-left: 10px;
+    
 }
-
-.header a {
-    color: #F5F5E9; /* Cream White */
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 5px;
-}
-
-.header a:hover {
-    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
-}
-
-/* Logo styling */
-.logo {
-    font-size: 150px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    color: white;
-    text-decoration: none;
-    margin-left: 3px;
-    transition: color 0.3s;
-}
-
-.logo:hover {
-    color: #D9C187; /* Hover color */
-}
-
 .logo-img {
     height: 120px;
     width: 120px;
