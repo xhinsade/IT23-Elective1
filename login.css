@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    background-image: url("./images/background.png"); /* Background image */
+    background-image: url("./images/CwinX.png"); /* Background image */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -109,7 +109,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2E5E4E; /* Forest Green */
+    background-color: #173927; /* Forest Green */
     padding: 2px;
     border-bottom: 5px solid white;
 }
@@ -141,7 +141,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #7A8865; /* Dusty Olive */
+    background-color: #173927; /* Dusty Olive */
     color: #F5F5E9; /* Cream White */
     text-align: center;
     padding: 15px;
