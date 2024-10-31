@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    background-image: url("./images/CwinX.png"); /* Background image */
+    background-image: url("./images/background.jpeg"); /* Background image */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
