@@ -1,6 +1,6 @@
 /* ------------------ General Body Styling ------------------ */
 body {
-    background-image: url("./img/bg-home.jpeg"); /* Use your image URL */
+    background-image: url("./images/background.jpeg"); /* Use your image URL */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -10,23 +10,35 @@ body {
     margin: 0;
 }
 
-/* ------------------ Header Styling ------------------ */
+/* Header styling */
 .header {
     display: flex;
-    justify-content: space-between; /* Space between left and right sections */
-    align-items: center; /* Vertically center items */
-    background-color: #2E5E4E; /* Forest Green for header background */
-    padding: 20px 10px;
-    font-size: 18px;
-    border-bottom: 5px solid #D9C187;
-    border-top: 5px solid #D9C187;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #173927; /* Forest Green */
+    padding: 2px;
+    border-bottom: 5px solid white;
 }
 
 .header-left {
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Vertically center items */
-    justify-content: left; /* Align to the left */
-    flex-grow: 1; /* Allow to grow */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+.header-left h1 {
+    font-size: 25px;
+    color: #F5F5E9; /* Cream White */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+.logo-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 3px;
 }
 
 .header-right {
@@ -48,27 +60,7 @@ body {
     background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
 }
 
-/* ------------------ Logo Styling ------------------ */
-.logo {
-    font-size: 150px; /* Font size */
-    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Font family */
-    font-weight: bolder; /* Bold text */
-    color: #F5F5E9; /* Text color */
-    text-decoration: none; /* Remove underline */
-    margin-left: 10px; /* Space between logo image and text */
-    transition: color 0.3s; /* Transition effect */
-}
 
-.logo:hover {
-    color: #D9C187; /* Hover color */
-}
-
-.logo-img {
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    margin-right: 3px;
-}
 
 /* ------------------ Main Content Styling ------------------ */
 .container {
