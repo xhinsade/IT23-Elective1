@@ -1,212 +1,134 @@
-/* ------------------ General Body Styling ------------------ */
+/* General Body Styling */
 body {
-    background-image: url("./images/background.jpeg"); /* Use your image URL */
+    background-image: url("images/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
-
 
 /* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #173927; /* Forest Green */
-    padding: 2px;
+    background-color: #173927;
+    padding: 20px;
     border-bottom: 5px solid white;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    justify-content: left;
-    flex-grow: 1;
 }
 
 .header-left h1 {
-    font-size: 25px;
-    color: #F5F5E9; /* Cream White */
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    
+    font-size: 35px;
+    color: #F5F5E9;
+    margin-left: 10px;
 }
+
 .logo-img {
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    margin-right: 3px;
 }
 
-.header-right {
-    display: flex; /* Flex container */
-    gap: 15px; /* Space between links */
-}
-
-.header a {
-    color: #F5F5E9; /* Cream White for links */
-    text-align: center;
-    padding: 3px;
+.header-right a {
+    color: #F5F5E9;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
-.header a:hover {
-    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+.header-right a:hover {
+    background-color: rgba(121, 7, 64, 0.637);
+    padding: 5px;
+    border-radius: 5px;
 }
-
-/* ------------------ Header-left h1 Styling ------------------ */
-.header-left h1 {
-    font-size: 35px; /* Font size */
-    color: #F5F5E9; /* Text color */
-    font-family: 'Times New Roman', Times, serif; /* Font family */
-    font-style: normal; /* Not italic */
-    font-weight: bolder; /* Bold */
-    margin-left: 10px; /* Left margin */
-}
-
-
-.header a:hover {
-    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
-}
-
-/* ------------------ Main Content Styling ------------------ */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; /* Add margin to bottom for separation from footer */
-    flex-direction: column; /* Ensure it stacks vertically */
-    min-height: 80vh; /* Adjust to ensure enough height for content */
-}
-
-
-.login-main {
-    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
-    text-align: center;
-    color: #2E5E4E; /* Forest Green */
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* Booking Form Styling */
+.booking-form {
+    background-color: rgba(245, 245, 233, 0.9);
     border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    width: 500px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #173927; /* Darker green for title */
-}
-
-.hero p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #2E5E4E;
-    margin-bottom: 1.5rem;
-    padding: 0 10px;
-}
-
-.hero .btn {
-    display: inline-block;
-    background-color: #D9C187; /* Pale Gold */
-    color: #2E5E4E; /* Forest Green */
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #7A8865; /* Darker shade on hover */
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    max-width: 600px;
 }
 
 
-/* ------------------ Service Image Styling ------------------ */
-.service-image {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Space around the image */
-}
-
-/* ------------------ Button Styling ------------------ */
-.btn {
-    background-color: #D9C187; /* Pale Gold */
-    color: #2E5E4E; /* Forest Green for text */
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #7A8865; /* Dusty Olive on hover */
-}
-
-.benefits {
+/* Center the "Get in Touch" section within the page */
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-}
-
-.benefit.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 245, 233, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
   text-align: center;
-  width: 80%;
-  /* Adjust width if needed */
-  max-width: 500px;
-}
-/* Card Styling */
-.card {
-    background-color: rgba(245, 245, 233, 0.9); /* Light translucent background */
-    border: 2px solid rgba(169, 183, 163, 0.7); /* Soft Sage Green with transparency */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    padding: 20px; /* Inner spacing */
-    transition: transform 0.3s ease; /* Smooth scaling on hover */
+  /* Center-aligns text inside the contact info box */
+  color: #2E5E4E;
 }
 
-.card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+/* General styling for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #2E5E4E;
 }
 
-.card h3 {
-    color: #2E5E4E; /* Forest Green for the title */
+.container h1 {
+  text-align: center;
+  border-bottom: 2px dashed #2E5E4E;
 }
 
-.card p {
-    color: #333; /* Dark text color for the paragraph */
+/* Optional styling to ensure .booking-form does not inherit centering */
+.booking-form {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-/* Contact Info Section */
-.contact-info {
-    text-align: center;
-    margin: 40px 0; /* Space around the section */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.contact-details {
-    margin: 20px 0; /* Space around contact details */
+form button[type="submit"] {
+    background-color: #2E5E4E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
-/* ------------------ Footer Styling ------------------ */
-.footer {
+form button[type="submit"]:hover {
+    background-color: #173927;
+}
+
+
+footer {
     background-color: #7A8865;
     color: #F5F5E9;
     text-align: center;

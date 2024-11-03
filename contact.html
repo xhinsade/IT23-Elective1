@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - CwinX Housekeeping Agency</title>
-    <link rel="stylesheet" type="text/css" href="contact.css" media="screen">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 <div class="header">
   <div class="header-left">
     <img src="images/logo.png" alt="CwinX Logo" class="logo-img">
-    <h1> CwinX </h1>
+    <h1>CwinX</h1>
   </div>
   <div class="header-right">
     <a href="about.html">About Us</a>
@@ -22,51 +22,75 @@
     <a href="home.html">Home</a>
   </div>
 </div>
-
 <div class="container">
-    <div class="login-main">
-        <h1>Welcome to</h1>
-        <h1>CwinX Housekeeping Agency</h1>
-        <p>Your trusted partner in keeping your home spotless and organized. We provide reliable and professional housekeeping services tailored to your needs.</p>
-        
-                      
-            <img src="../images/contact.jpeg" alt="Clean home environment" class="service-image">
+    <!-- Booking Form Container -->
+    <div class="content-box booking-form">
+        <h1>Book a Service</h1>
+        <form action="mailto:info@cwinx.com" method="post" enctype="text/plain">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <a href="services.html" class="btn">Explore Our Services</a>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            
+<label for="service">Select Service:</label>
+<select id="service" name="service" required>
+    <option value="cleaning">Cleaning</option>
+    <option value="laundry">Laundry</option>
+    <option value="organization">Organization</option>
+    <option value="deep-cleaning">Deep Cleaning</option>
+    <option value="move-in-out-cleaning">Move-In/Out Cleaning</option>
+    <option value="window-cleaning">Window Cleaning</option>
+    <option value="commercial-cleaning">Commercial Cleaning</option>
+    <option value="post-construction-cleaning">Post-Construction Cleaning</option>
+</select>
+
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+
+    <!-- Contact Information Container -->
+    <div class="content-box contact-info">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, need further information, or want to book our services, feel free to contact us. We are here to help!</p>
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p><strong>Phone:</strong> 09123456789</p>
+            <p><strong>Email:</strong> <a href="mailto:info@cwinx.com">info@cwinx.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <h2>Follow Us on Social Media</h2>
+            <p>Stay updated on our latest offers and services by following us on:</p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
     </div>
 </div>
 
-
-
-
-        <section class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>If you have any questions, need further information, or want to book our services, feel free to contact us. We are here to help!</p>
-            <div class="contact-details">
-                <h3>Contact Details</h3>
-                <p><strong>Phone:</strong> 09123456789</p>
-                <p><strong>Email:</strong> <a href="mailto:info@cwinx.com">info@cwinx.com</a></p>
-            </div>
-
-            <div class="social-media">
-                <h3>Follow Us on Social Media</h3>
-                <p>Stay updated on our latest offers and services by following us on:</p>
-                <a href="#">Facebook</a> | 
-                <a href="#">Instagram</a> | 
-                <a href="#">Twitter</a>
-            </div>
-        </section>
-    </div>
-
-        <!-- Footer -->
-    <footer>
-      <div class="footer">
+<!-- Footer -->
+<footer>
+    <div class="footer">
         <p>© Copyright <strong>CwinX Housekeeping Agency</strong>. All Rights Reserved.</p>
         <div class="footer-links">
-          <a href="terms.html">Terms & Conditions</a> |
-          <a href="policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="policy.html">Privacy Policy</a>
         </div>
-      </div>
-    </footer>
+    </div>
+    
+</footer>
+
 </body>
 </html>
