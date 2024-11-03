@@ -27,13 +27,16 @@ body {
     flex-grow: 1;
 }
 
+/* ------------------ Header-left h1 Styling ------------------ */
 .header-left h1 {
-    font-size: 25px;
-    color: #F5F5E9; /* Cream White */
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    
+    font-size: 35px; /* Font size */
+    color: #F5F5E9; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-style: normal; /* Not italic */
+    font-weight: bolder; /* Bold */
+    margin-left: 10px; /* Left margin */
 }
+
 .logo-img {
     height: 120px;
     width: 120px;
@@ -169,12 +172,4 @@ body {
     
 }
 
-/* ------------------ Header-left h1 Styling ------------------ */
-.header-left h1 {
-    font-size: 35px; /* Font size */
-    color: #F5F5E9; /* Text color */
-    font-family: 'Times New Roman', Times, serif; /* Font family */
-    font-style: normal; /* Not italic */
-    font-weight: bolder; /* Bold */
-    margin-left: 10px; /* Left margin */
-}
+
