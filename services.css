@@ -1,22 +1,24 @@
+/* ------------------ General Body Styling ------------------ */
 body {
-    background-image: url("./img/bg-home.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Use space-between to push footer down */
-    min-height: 100vh; /* Full viewport height */
-    margin: 0;
+  background-image: url("./images/background.jpeg");
+  /* Use your image URL */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
+/* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2E5E4E;
-    padding: 20px 10px;
-    font-size: 18px;
-    border-bottom: 5px solid #D9C187;
+    background-color: #173927; /* Forest Green */
+    padding: 2px;
+    border-bottom: 5px solid white;
 }
 
 .header-left {
@@ -26,39 +28,37 @@ body {
     flex-grow: 1;
 }
 
+.header-left h1 {
+    font-size: 25px;
+    color: #F5F5E9; /* Cream White */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+.logo-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
 .header-right {
-    display: flex;
-    gap: 15px;
+    display: flex; /* Flex container */
+    gap: 15px; /* Space between links */
 }
 
 .header a {
-    color: #F5F5E9;
+    color: #F5F5E9; /* Cream White for links */
     text-align: center;
     padding: 3px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    margin-left: 5px;
 }
 
 .header a:hover {
-    background-color: rgba(121, 7, 64, 0.637);
-}
-
-.logo-img {
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; /* Add margin to bottom for separation from footer */
-    flex-direction: column; /* Ensure it stacks vertically */
-    min-height: 80vh; /* Adjust to ensure enough height for content */
+    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
 }
 
 
