@@ -1,15 +1,15 @@
 /* ------------------ General Body Styling ------------------ */
 body {
-  background-image: url("./images/background.jpeg");
-  /* Use your image URL */
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+    background-image: url("./images/background.jpeg"); /* Use your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
+
 /* Header styling */
 .header {
     display: flex;
@@ -29,7 +29,7 @@ body {
 
 /* ------------------ Header-left h1 Styling ------------------ */
 .header-left h1 {
-    font-size: px; /* Font size */
+    font-size: 2.5em; /* Set appropriate font size */
     color: #F5F5E9; /* Text color */
     font-family: 'Times New Roman', Times, serif; /* Font family */
     font-style: normal; /* Not italic */
@@ -56,13 +56,11 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 5px;
 }
 
 .header a:hover {
     background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
 }
-
 
 /* Main Content Styling */
 .main-content {
@@ -106,4 +104,20 @@ body {
     max-height: 200px; /* Set a maximum height for the logo */
     display: block; /* Center image in the container */
     margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 10px; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Use full width on smaller screens */
+    }
+
+    .header-left h1 {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    .header a {
+        font-size: 16px; /* Adjust link size on mobile */
+    }
 }
