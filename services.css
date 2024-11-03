@@ -59,6 +59,17 @@ body {
     background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
 }
 
+
+/* ------------------ Header-left h1 Styling ------------------ */
+.header-left h1 {
+    font-size: 35px; /* Font size */
+    color: #F5F5E9; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-style: normal; /* Not italic */
+    font-weight: bolder; /* Bold */
+    margin-left: 10px; /* Left margin */
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -111,8 +122,12 @@ body {
 
 
 .card-image {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 450px; /* Set a max height to keep the images uniform */
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    border-radius: 5px; /* Optional: add rounded corners to the image */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 .card-content {
@@ -181,9 +196,85 @@ body {
     text-decoration: none;
     margin: 0 5px;
 }
+/* Reviews Section Styling */
+.reviews-container {
+    background-color: rgba(245, 245, 233, 0.9); /* Light translucent background */
+    padding: 20px; /* Inner spacing */
+    margin: 20px 0; /* Space above and below */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center text */
+}
 
-.header-left h1 {
-    font-size: 35px;
-    color: #F5F5E9;
-    font-family: 'Times New Roman', Times, serif;
+.reviews-container h2 {
+    color: #2E5E4E; /* Forest Green for heading */
+}
+
+.review {
+    margin: 15px 0; /* Space between reviews */
+    font-style: italic; /* Italicize the review text */
+    color: #333; /* Dark text color */
+}
+
+.review-header {
+    display: flex; /* Flexbox for stars and citation */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+}
+
+.stars {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 1.2em; /* Larger star size */
+}
+
+.review-date {
+    display: block; /* Make the date a block element */
+    margin-top: 5px; /* Space above the date */
+    font-size: 0.9em; /* Slightly smaller text for date */
+    color: #777; /* Light gray for the date */
+}
+
+.review cite {
+    margin-left: 10px; /* Space between stars and citation */
+    color: #2E5E4E; /* Different color for the author */
+}
+
+
+/* Review Form Container Styling */
+.review-form-container {
+    background-color: rgba(245, 245, 233, 0.9); /* Light translucent background */
+    padding: 20px; /* Inner spacing */
+    margin: 20px 0; /* Space above and below */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.review-form-container h3 {
+    color: #2E5E4E; /* Forest Green for heading */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.review-form-container textarea,
+.review-form-container input,
+.review-form-container select {
+    width: 100%; /* Full width for form elements */
+    padding: 10px; /* Inner spacing for form elements */
+    margin: 10px 0; /* Space between elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+}
+
+.review-form-container button {
+    background-color: #2E5E4E; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Inner spacing */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+}
+
+.review-form-container button:hover {
+    background-color: #2b4d3a; /* Darker green on hover */
 }
