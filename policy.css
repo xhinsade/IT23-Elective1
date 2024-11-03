@@ -1,85 +1,91 @@
-/* General Body Styling */
+/* ------------------ General Body Styling ------------------ */
 body {
-    background-image: url("../img/Luxe-feminine.jpeg"); /* Background image */
-    background-size: cover;
-    background-position: center;
-    font-family: 'Georgia', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px; /* Added padding for better content spacing */
-    color: #333; /* Dark text color for readability */
+  background-image: url("./images/background.jpeg");
+  /* Use your image URL */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
-
-/* Header Styling */
+/* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(46, 94, 78, 0.85); /* Semi-transparent Forest Green */
-    padding: 10px 20px; /* Adjust padding for overall height */
-    font-size: 18px; /* Default font size */
+    background-color: #173927; /* Forest Green */
+    padding: 2px;
+    border-bottom: 5px solid white;
 }
 
 .header-left {
     display: flex;
     align-items: center;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+/* ------------------ Header-left h1 Styling ------------------ */
+.header-left h1 {
+    font-size: px; /* Font size */
+    color: #F5F5E9; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-style: normal; /* Not italic */
+    font-weight: bolder; /* Bold */
+    margin-left: 10px; /* Left margin */
 }
 
 .logo-img {
-    height: 60px;
-    width: 60px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 3px;
 }
 
 .header-right {
-    display: flex; /* Make the right side also a flex container */
-    gap: 15px; /* Space between the links */
+    display: flex; /* Flex container */
+    gap: 15px; /* Space between links */
 }
 
-.header-right a {
-    color: #F5F5E9; /* Cream White */
+.header a {
+    color: #F5F5E9; /* Cream White for links */
+    text-align: center;
+    padding: 3px;
     text-decoration: none;
-    padding: 12px 20px; /* Adjusted padding for consistent height */
-    font-size: 18px; /* Font size */
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin-left: 5px;
 }
 
-.header-right a:hover,
-.header-right a.active {
-    background-color: rgba(201, 52, 114, 0.8); /* Pinkish color */
+.header a:hover {
+    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
 }
+
 
 /* Main Content Styling */
 .main-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
-    padding: 20px; /* Padding for spacing */
-    max-width: 800px; /* Limit width for better readability */
-    margin: auto; /* Center the content horizontally */
-    background-color: rgba(255, 255, 255, 0.9); /* Light translucent background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    align-items: center; /* Centering content */
+    padding: 20px; /* Increased padding for a more spacious layout */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for content area */
+    border-radius: 10px; /* Rounded corners for the content area */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 900px; /* Limit width for better readability */
+    margin: auto; /* Center the content */
 }
 
 .main-content h1 {
-    color: #2E5E4E; /* Forest Green for the title */
     font-size: 2.5em; /* Larger title */
-}
-
-.main-content h2 {
-    color: #2E5E4E; /* Forest Green for the section titles */
-    margin-top: 20px; /* Space before section titles */
+    color: #2E5E4E; /* Forest Green */
+    margin-bottom: 20px; /* Space below the title */
 }
 
 .main-content p {
-    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1.2em; /* Larger paragraph text */
+    margin-bottom: 20px; /* Space between paragraphs */
 }
 
 /* Footer Styling */
@@ -89,7 +95,15 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 16px;
-    position: relative; /* Ensure footer stays at bottom */
-    bottom: 0; /* Stick footer at bottom */
-    width: 100%; /* Full width */
+    position: relative; /* Ensures it stays at the bottom */
+    bottom: 0; /* Anchors the footer to the bottom */
+    width: 100%; /* Ensures the footer takes full width */
+}
+
+.privacy-image {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for the logo */
+    display: block; /* Center image in the container */
+    margin: 0 auto; /* Centers the image horizontally */
 }
