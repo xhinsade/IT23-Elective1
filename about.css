@@ -108,26 +108,53 @@ body {
     background-color: #E84C88; /* Lighter shade on hover */
 }
 
-/* About Us Section */
-.about-us {
-    text-align: center;
-    margin: 40px 0; /* Space around the section */
+
+
+/* Mission and Values Container */
+.mission-values-container {
+    background-color: rgba(245, 245, 233, 0.9); /* Light translucent background */
+    border: 2px solid rgba(169, 183, 163, 0.7); /* Soft Sage Green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin: 20px 0; /* Space above and below the section */
+    text-align: center; /* Center text */
 }
 
+/* Image styling */
+.mission-image {
+    margin: 20px 0; /* Space above and below the image */
+}
+
+.mission-image-img {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for the logo */
+    display: block; /* Center image in the container */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Mission Values Section Title */
+.mission-values h3 {
+    color: #2E5E4E; /* Forest Green for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Benefits Section */
 .benefits {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the benefits */
     gap: 20px; /* Space between benefits */
     flex-wrap: wrap; /* Wrap items in case of small screens */
+    margin-top: 20px; /* Space above benefits */
 }
 
-.benefit {
+.benefit.card {
     max-width: 300px; /* Limit width for each benefit box */
     flex: 1; /* Allow items to grow/shrink */
     margin: 10px; /* Space around each card */
 }
 
-/* Card Styling */
+/* Adjustments for card styling */
 .card {
     background-color: rgba(245, 245, 233, 0.9); /* Light translucent background */
     border: 2px solid rgba(169, 183, 163, 0.7); /* Soft Sage Green with transparency */
@@ -135,28 +162,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
     padding: 20px; /* Inner spacing */
     transition: transform 0.3s ease; /* Smooth scaling on hover */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
-
-.card h3 {
-    color: #2E5E4E; /* Forest Green for the title */
-}
-
-.card p {
-    color: #333; /* Dark text color for the paragraph */
-}
-
-/* Contact Info Section */
-.contact-info {
-    text-align: center;
-    margin: 40px 0; /* Space around the section */
-}
-
-.contact-details {
-    margin: 20px 0; /* Space around contact details */
 }
 
 /* ------------------ Footer Styling ------------------ */
@@ -180,3 +185,33 @@ body {
     margin: 0 5px; /* Space between links */
     
 }
+
+/* Media Container Styling */
+.media-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+    max-width: 900px; /* Limit the maximum width */
+    margin: 20px auto; /* Center the container */
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    max-width: 800px; /* Set a max-width for the video */
+    margin: 0 auto; /* Center the video wrapper */
+}
+
+/* Hero Image styling */
+.hero-image {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space above and below the image */
+}
+
+/* Additional styling for better appearance */
+.main-content {
+    text-align: center; /* Center text for the main content */
+    padding: 20px; /* Padding for spacing */
+}
+

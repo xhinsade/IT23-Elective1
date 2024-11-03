@@ -29,7 +29,7 @@ body {
 
 /* ------------------ Header-left h1 Styling ------------------ */
 .header-left h1 {
-    font-size: 35px; /* Font size */
+    font-size: 25px; /* Font size */
     color: #F5F5E9; /* Text color */
     font-family: 'Times New Roman', Times, serif; /* Font family */
     font-style: normal; /* Not italic */
@@ -65,52 +65,67 @@ body {
 
 
 
-/* ------------------ Main Content Styling ------------------ */
+/* ------------------ Hero Section Styling ------------------ */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; /* Add margin to bottom for separation from footer */
-    flex-direction: column; /* Ensure it stacks vertically */
-    min-height: 80vh; /* Adjust to ensure enough height for content */
+    flex-direction: column; 
+    min-height: 80vh; 
+    padding: 20px; /* Added padding for better spacing */
 }
-
 
 .login-main {
     background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
     text-align: center;
-    color: #2E5E4E; /* Forest Green */
-    font-size: 15px;
+    color: #2E5E4E; 
+    font-size: 20px; /* Increased font size for better visibility */
     line-height: 1.5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Max width for larger screens */
+    margin: 0 auto; /* Center the hero section */
 }
 
-/* ------------------ Service Image Styling ------------------ */
+.login-main h1 {
+    font-size: 2.5rem; /* Increased size for main titles */
+    margin: 10px 0; /* Space between headings */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+}
+
+.login-main p {
+    margin: 20px 0; /* Add space above and below the paragraph */
+    font-size: 1.2rem; /* Slightly larger font for readability */
+}
+
 .service-image {
     width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Space around the image */
+    height: auto; 
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    margin: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for image */
 }
 
-/* ------------------ Button Styling ------------------ */
+/* Button Styling */
 .btn {
     background-color: #D9C187; /* Pale Gold */
-    color: #2E5E4E; /* Forest Green for text */
+    color: #2E5E4E; 
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures the button fits its content */
+    margin-top: 20px; /* Space above the button */
 }
 
 .btn:hover {
-    background-color: #7A8865; /* Dusty Olive on hover */
+    background-color: #7A8865; 
 }
+
 
 /* ------------------ Call-to-Action (CTA) Styling ------------------ */
 .cta {
@@ -173,3 +188,33 @@ body {
 }
 
 
+/* Benefits Section Styles */
+.benefits {
+    display: flex;
+    justify-content: center; /* Centering the cards */
+    gap: 30px; /* Space between cards (increase as needed) */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    padding: 20px; /* Add padding around the container */
+}
+
+
+
+/* Benefit Image Styling */
+.benefit-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 450px; /* Set a max height to keep the images uniform */
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    border-radius: 5px; /* Optional: add rounded corners to the image */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Title and Paragraph Styling */
+.card h3 {
+    color: #2E5E4E; /* Forest Green for the title */
+    margin: 10px 0; /* Space above and below title */
+}
+
+.card p {
+    color: #333; /* Dark text color for the paragraph */
+}
