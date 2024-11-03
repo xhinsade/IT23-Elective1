@@ -215,3 +215,28 @@ body {
     padding: 20px; /* Padding for spacing */
 }
 
+/* Contact Information Section Styling */
+.contact-info {
+    background-color: rgba(245, 245, 233, 0.9); /* Light translucent background */
+    text-align: center; /* Center text */
+    color: #2E5E4E; /* Forest Green text color */
+    padding: 20px; /* Inner spacing */
+    margin: 20px 0; /* Space above and below the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Button Styling */
+.contact-info .btn {
+    background-color: #D9C187; /* Button background color */
+    color: #2E5E4E; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-info .btn:hover {
+    background-color: #7A8865; /* Darker color on hover */
+}
+
