@@ -1,14 +1,12 @@
-/* ------------------ General Body Styling ------------------ */
 body {
-  background-image: url("./images/background.jpeg");
-  /* Use your image URL */
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+    background-image: url("./images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Use space-between to push footer down */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
 }
 
 /* Header styling */
@@ -59,6 +57,16 @@ body {
 
 .header a:hover {
     background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* Add margin to bottom for separation from footer */
+    flex-direction: column; /* Ensure it stacks vertically */
+    min-height: 80vh; /* Adjust to ensure enough height for content */
 }
 
 

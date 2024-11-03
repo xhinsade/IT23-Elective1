@@ -10,8 +10,6 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
-
 /* Header styling */
 .header {
     display: flex;
@@ -60,6 +58,17 @@ body {
 
 .header a:hover {
     background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+}
+
+
+/* ------------------ Header-left h1 Styling ------------------ */
+.header-left h1 {
+    font-size: 35px; /* Font size */
+    color: #F5F5E9; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-style: normal; /* Not italic */
+    font-weight: bolder; /* Bold */
+    margin-left: 10px; /* Left margin */
 }
 
 /* Main Content Styling */
