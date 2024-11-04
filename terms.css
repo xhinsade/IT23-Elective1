@@ -1,3 +1,10 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ------------------ General Body Styling ------------------ */
 body {
   background-image: url("./images/background.jpeg");
@@ -7,19 +14,25 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
   font-family: 'Times New Roman', Times, serif;
+  overflow-x: hidden;
 }
 
-/* Header styling */
+body,
+.main-content {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* ------------------ Header Styling ------------------ */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #173927;
-  padding: 2px;
   border-bottom: 5px solid white;
-  
+  width: 100%;
 }
 
 .header-left {
@@ -34,7 +47,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   margin-left: 10px;
-  
+  text-align: center;
 }
 
 .logo-img {
@@ -63,7 +76,7 @@ body {
   background-color: rgba(121, 7, 64, 0.637);
 }
 
-/* Main Content Styling */
+/* ------------------ Main Content Styling ------------------ */
 .main-content {
   display: flex;
   flex-direction: column;
@@ -72,7 +85,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -88,7 +101,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Footer Styling */
+/* ------------------ Footer Styling ------------------ */
 .footer {
   background-color: #7A8865;
   color: #F5F5E9;
@@ -109,7 +122,7 @@ body {
   margin: 0 auto;
 }
 
-/* Toggle Buttons */
+/* ------------------ Toggle Buttons ------------------ */
 .toggle-buttons {
   text-align: center;
   margin: 20px;
