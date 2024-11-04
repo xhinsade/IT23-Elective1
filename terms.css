@@ -1,7 +1,6 @@
 /* ------------------ General Body Styling ------------------ */
 body {
   background-image: url("./images/background.jpeg");
-  /* Use your image URL */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -9,101 +8,124 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
+
 /* Header styling */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #173927; /* Forest Green */
-    padding: 2px;
-    border-bottom: 5px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #173927;
+  padding: 2px;
+  border-bottom: 5px solid white;
+  
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
-/* ------------------ Header-left h1 Styling ------------------ */
 .header-left h1 {
-    font-size: px; /* Font size */
-    color: #F5F5E9; /* Text color */
-    font-family: 'Times New Roman', Times, serif; /* Font family */
-    font-style: normal; /* Not italic */
-    font-weight: bolder; /* Bold */
-    margin-left: 10px; /* Left margin */
+  font-size: 24px;
+  color: #F5F5E9;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  margin-left: 10px;
+  
 }
 
 .logo-img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-right: 3px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-right: 3px;
 }
 
 .header-right {
-    display: flex; /* Flex container */
-    gap: 15px; /* Space between links */
+  display: flex;
+  gap: 15px;
 }
 
 .header a {
-    color: #F5F5E9; /* Cream White for links */
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 5px;
+  color: #F5F5E9;
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 .header a:hover {
-    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+  background-color: rgba(121, 7, 64, 0.637);
 }
-
 
 /* Main Content Styling */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centering content */
-    padding: 20px; /* Increased padding for a more spacious layout */
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for content area */
-    border-radius: 10px; /* Rounded corners for the content area */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    max-width: 900px; /* Limit width for better readability */
-    margin: auto; /* Center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
 }
 
 .main-content h1 {
-    font-size: 2.5em; /* Larger title */
-    color: #2E5E4E; /* Forest Green */
-    margin-bottom: 20px; /* Space below the title */
+  font-size: 2.5em;
+  color: #2E5E4E;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .main-content p {
-    font-size: 1.2em; /* Larger paragraph text */
-    margin-bottom: 20px; /* Space between paragraphs */
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #7A8865; /* Dusty Olive */
-    color: #F5F5E9; /* Cream White */
-    text-align: center;
-    padding: 20px;
-    font-size: 16px;
-    position: relative; /* Ensures it stays at the bottom */
-    bottom: 0; /* Anchors the footer to the bottom */
-    width: 100%; /* Ensures the footer takes full width */
+  background-color: #7A8865;
+  color: #F5F5E9;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-.terms-image {
-    max-width: 100%; /* Responsive width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height for the logo */
-    display: block; /* Center image in the container */
-    margin: 0 auto; /* Centers the image horizontally */
+.terms-image,
+.privacy-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+.toggle-buttons button {
+  background-color: #173927;
+  color: #F5F5E9;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.toggle-buttons button:hover {
+  background-color: rgba(121, 7, 64, 0.637);
 }

@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - CwinX Housekeeping Agency</title>
+    <title>CwinX Housekeeping Agency - Policies</title>
     <link rel="stylesheet" type="text/css" href="terms.css" media="screen">
+    <script>
+        function showSection(sectionId) {
+            // Hide both sections initially
+            document.getElementById('privacy-policy').style.display = 'none';
+            document.getElementById('terms-conditions').style.display = 'none';
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
-<body>
+
+<body onload="showSection('privacy-policy')"> <!-- Default to show Privacy Policy on load -->
+
     <header class="header">
         <div class="header-left">
             <img src="images/logo.png" alt="CwinX Logo" class="logo-img">
@@ -20,12 +32,80 @@
         </nav>
     </header>
 
-    <main class="main-content">
-        <h1>Terms and Conditions</h1>
+    <!-- Toggle Buttons -->
+    <div class="toggle-buttons">
+        <button onclick="showSection('privacy-policy')">Privacy Policy</button>
+        <button onclick="showSection('terms-conditions')">Terms and Conditions</button>
+    </div>
+
+    <!-- Privacy Policy Section -->
+    <div id="privacy-policy" class="main-content">
+        <h1>Privacy Policy</h1>
+        <img src="images/logo.png" alt="Privacy Logo Image" class="privacy-image">
+
+        <p><strong>Last Updated: November 04, 2021</strong></p>
         
+        <p>At CwinX Housekeeping Agency, we value your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our services.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect several types of information to provide our services effectively:</p>
+        <ul>
+            <li><strong>Personal Information:</strong> This includes your name, email address, phone number, and address when you book our services.</li>
+            <li><strong>Payment Information:</strong> We collect payment details to process your payments securely. We do not store your credit card information.</li>
+            <li><strong>Usage Data:</strong> We may collect information about how you use our website, including your IP address, browser type, and access times.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use your information for the following purposes:</p>
+        <ul>
+            <li>To provide and maintain our services.</li>
+            <li>To process your transactions and send you confirmations.</li>
+            <li>To communicate with you regarding your bookings, promotions, or customer service inquiries.</li>
+            <li>To improve our website and services based on your feedback.</li>
+            <li>To comply with legal obligations and protect our rights.</li>
+        </ul>
+
+        <h2>3. Data Protection</h2>
+        <p>We take the security of your personal information seriously. We implement appropriate technical and organizational measures to protect your data from unauthorized access, alteration, disclosure, or destruction.</p>
+        
+        <h2>4. Sharing Your Information</h2>
+        <p>We do not sell or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+        <ul>
+            <li>With trusted service providers who assist us in operating our website and conducting our business, subject to confidentiality agreements.</li>
+            <li>When required by law or to comply with legal processes.</li>
+            <li>In connection with a merger, acquisition, or sale of all or a portion of our assets.</li>
+        </ul>
+
+        <h2>5. Your Rights</h2>
+        <p>You have the following rights regarding your personal information:</p>
+        <ul>
+            <li>The right to access your personal information.</li>
+            <li>The right to request correction of inaccurate information.</li>
+            <li>The right to request deletion of your personal information.</li>
+            <li>The right to withdraw consent to the processing of your information at any time.</li>
+        </ul>
+        
+        <h2>6. Cookies</h2>
+        <p>We use cookies and similar tracking technologies to enhance your experience on our website. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser settings to decline cookies if you prefer.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h3>Contact Us:</h3>
+        <p><strong>CwinX Housekeeping Agency</strong><br>
+        Email: <a href="mailto:info@cwinx.com">info@cwinx.com</a><br>
+        Phone: 0912345678<br>
+        Address: St. Lourenz, Capitol Davao City</p>
+
+        <p>Thank you for choosing CwinX! We look forward to helping you create a clean and comfortable home.</p>
+    </div>
+
+    <!-- Terms and Conditions Section -->
+    <div id="terms-conditions" class="main-content" style="display: none;">
+        <h1>Terms and Conditions</h1>
         <img src="images/logo.png" alt="Terms and Conditions Image" class="terms-image">
 
-        <p><strong>Last Updated: [November 04, 2021 ]</strong></p>
+        <p><strong>Last Updated: November 04, 2021</strong></p>
         
         <p>Welcome to CwinX Housekeeping Agency! We’re thrilled that you’ve chosen us to help keep your home clean and organized. Before we get started, we want to make sure you understand how we operate. These Terms and Conditions are here to guide our relationship, ensuring everything runs smoothly.</p>
 
@@ -63,18 +143,15 @@
         <p>Sometimes, we may need to update these terms. If that happens, we’ll make sure to keep you in the loop.</p>
 
         <h2>8. Our Agreement is Governed by Law</h2>
-        <p>These Terms and Conditions are governed by the laws of [your jurisdiction]. If any part of these terms is found to be unenforceable, the rest will remain in effect.</p>
-
-        <h2>9. We’re Here for You</h2>
-        <p>If you have any questions or concerns about our Terms and Conditions or our services, please don’t hesitate to reach out.</p>
+        <p>These Terms and Conditions are governed by the laws of [your jurisdiction]. If any part of these terms is found to be unenforceable, the rest will still apply.</p>
 
         <h3>Contact Us:</h3>
         <p><strong>CwinX Housekeeping Agency</strong><br>
         Email: <a href="mailto:info@cwinx.com">info@cwinx.com</a><br>
-        Phone: [0912345678]<br>
-        Address: [St. Lourenz, Capitol Davao City]</p>
+        Phone: 0912345678<br>
+        Address: St. Lourenz, Capitol Davao City</p>
 
-        <p>Thank you for choosing CwinX! We look forward to helping you create a clean and comfortable home.</p>
+        <p>Thank you for trusting us with your home. We’re excited to work with you!</p>
     </div>
 
     <footer class="footer">
