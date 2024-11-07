@@ -242,3 +242,54 @@ footer {
 #cancel-button:hover {
     background-color: #c62828; /* Darker red on hover */
 }
+
+/* Contact Information Container */
+.content-box.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box.contact-info h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.content-box.contact-info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-details, .social-media {
+    margin-top: 20px;
+}
+
+.contact-details h2, .social-media h2 {
+    color: #444;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-details p, .social-media p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.contact-details a, .social-media a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact-details a:hover, .social-media a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
