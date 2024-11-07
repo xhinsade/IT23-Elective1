@@ -107,3 +107,53 @@
         }
     });
 
+    // Check if Geolocation API is available and request location
+function useMyLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+// Handle successful location retrieval
+function successCallback(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    // Perform reverse geocoding using Google Maps API or another provider
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=YOUR_API_KEY`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "OK") {
+                const addressComponents = data.results[0].address_components;
+                fillAddressFields(addressComponents);
+            } else {
+                alert("Unable to retrieve address.");
+            }
+        })
+        .catch(error => console.error("Error:", error));
+}
+
+// Fill form fields with address data
+function fillAddressFields(addressComponents) {
+    addressComponents.forEach(component => {
+        if (component.types.includes("street_address")) {
+            document.getElementById("street-address").value = component.long_name;
+        } else if (component.types.includes("neighborhood")) {
+            document.getElementById("barangay").value = component.long_name;
+        } else if (component.types.includes("locality")) {
+            document.getElementById("municipality").value = component.long_name;
+        } else if (component.types.includes("administrative_area_level_2")) {
+            document.getElementById("city").value = component.long_name;
+        } else if (component.types.includes("postal_code")) {
+            document.getElementById("zip").value = component.long_name;
+        }
+    });
+}
+
+// Handle location errors
+function errorCallback(error) {
+    alert("Unable to retrieve your location.");
+}
+
