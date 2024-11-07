@@ -59,23 +59,97 @@ body {
 }
 
 
-/* Center the "Get in Touch" section within the page */
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(245, 245, 233, 0.9);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  margin-left: 25px;
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-  /* Center-aligns text inside the contact info box */
-  color: #2E5E4E;
-  font-family: 'Times New Roman', Times, serif;
+/* General Styles for the Contact Section */
+.content-box {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px;
+    margin: 0 auto; /* Center align */
+    text-align: center;
+}
+
+.content-box h2 {
+    color: #333; /* Heading color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    color: #555; /* Paragraph text color */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Contact Details */
+.contact-details p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-details a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.social-media p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.social-media a i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.social-media a:hover {
+    color: #0073e6; /* Hover color for links */
+}
+
+.social-media a .fa-facebook-square {
+    color: #3b5998; /* Facebook color */
+}
+
+.social-media a .fa-instagram {
+    color: #e4405f; /* Instagram color */
+}
+
+.social-media a .fa-twitter-square {
+    color: #1da1f2; /* Twitter color */
+}
+
+.social-media a:hover .fa-facebook-square,
+.social-media a:hover .fa-instagram,
+.social-media a:hover .fa-twitter-square {
+    color: #0073e6; /* Change icon color on hover */
 }
 
 /* General styling for the container */
@@ -241,4 +315,50 @@ footer {
 
 #cancel-button:hover {
     background-color: #c62828; /* Darker red on hover */
+}
+
+h2{
+  
+  border-bottom: 2px dashed #173927;
+}
+
+/* Menu Icon Styling */
+.menu-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon .icon {
+    font-size: 35px; /* Adjust size as needed */
+    color: whitesmoke;     /* Icon color */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 120px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.menu-icon:hover .dropdown-menu {
+    display: block;
 }
