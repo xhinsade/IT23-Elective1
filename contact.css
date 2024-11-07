@@ -293,3 +293,21 @@ footer {
     font-weight: bold;
 }
 
+/* Style for "Use My Location" button */
+form button.location-button {
+    background-color: #2E5E4E; /* Dark green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px; /* Space above button */
+    display: inline-block;
+}
+
+form button.location-button:hover {
+    background-color: #173927; /* Darker green on hover */
+}
+

@@ -1,169 +1,184 @@
 /* ------------------ General Body Styling ------------------ */
 body {
-    background-image: url("./images/background.jpeg"); /* Use your image URL */
+    background-image: url("./images/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif; /* General sans-serif font for modern look */
+    color: #2E5E4E;
 }
 
-/* Header styling */
+/* Header Styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #173927; /* Forest Green */
-    padding: 2px;
+    background-color: #173927;
+    padding: 15px 20px;
     border-bottom: 5px solid white;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    justify-content: left;
-    flex-grow: 1;
 }
 
-/* ------------------ Header-left h1 Styling ------------------ */
 .header-left h1 {
-    font-size: 25px; /* Font size */
-    color: #F5F5E9; /* Text color */
-    font-family: 'Times New Roman', Times, serif; /* Font family */
-    font-style: normal; /* Not italic */
-    font-weight: bolder; /* Bold */
-    margin-left: 10px; /* Left margin */
+    font-size: 30px;
+    color: #F5F5E9;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .logo-img {
-    height: 120px;
-    width: 120px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    margin-right: 3px;
-}
-
-.header-right {
-    display: flex; /* Flex container */
-    gap: 15px; /* Space between links */
 }
 
 .header a {
-    color: #F5F5E9; /* Cream White for links */
-    text-align: center;
-    padding: 3px;
+    color: #F5F5E9;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
 
 .header a:hover {
-    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+    background-color: rgba(121, 7, 64, 0.6);
 }
-
-
 
 /* ------------------ Hero Section Styling ------------------ */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
-    min-height: 80vh; 
-    padding: 20px; /* Added padding for better spacing */
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 20px;
+    text-align: center;
 }
 
 .login-main {
-    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
-    text-align: center;
-    color: #2E5E4E; 
-    font-size: 20px; /* Increased font size for better visibility */
-    line-height: 1.5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(245, 245, 233, 0.9);
+    color: #2E5E4E;
+    font-size: 18px;
+    line-height: 1.6;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
-    width: 100%; /* Responsive width */
-    max-width: 600px; /* Max width for larger screens */
-    margin: 0 auto; /* Center the hero section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .login-main h1 {
-    font-size: 2.5rem; /* Increased size for main titles */
-    margin: 10px 0; /* Space between headings */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
-    
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #173927;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .login-main p {
-    margin: 20px 0; /* Add space above and below the paragraph */
-    font-size: 1.2rem; /* Slightly larger font for readability */
+    margin: 20px 0;
+    font-size: 1.2rem;
 }
 
 .service-image {
-    width: 100%; /* Responsive image */
-    height: auto; 
-    border-radius: 10px; /* Optional: rounded corners for the image */
-    margin: 20px 0; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for image */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Button Styling */
 .btn {
-    background-color: #D9C187; /* Pale Gold */
-    color: #2E5E4E; 
+    background-color: #D9C187;
+    color: #2E5E4E;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease;
-    display: inline-block; /* Ensures the button fits its content */
-    margin-top: 20px; /* Space above the button */
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .btn:hover {
-    background-color: #7A8865; 
+    background-color: #7A8865;
 }
 
+/* ------------------ Benefits Section Styling ------------------ */
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.benefit.card {
+    background-color: rgba(245, 245, 233, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.benefit.card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #173927;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #333;
+}
 
 /* ------------------ Call-to-Action (CTA) Styling ------------------ */
 .cta {
-    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
+    background-color: rgba(245, 245, 233, 0.9);
     text-align: center;
-    color: #2E5E4E; /* Forest Green */
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2E5E4E;
+    padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for floating effect */
-    padding: 40px 20px; /* Padding for spacing */
-    margin: 20px; /* Space around the section */
-    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    max-width: 800px;
 }
 
 .cta h2 {
-    color: #2E5E4E; /* Forest Green */
-}
-
-.cta p {
     color: #2E5E4E;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .cta ul {
-  
-    list-style: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    border-top: solid;
-    border-top-color: #2E5E4E;
-    border-top-style: dashed;
-    
-}
-
-.cta li {
-    margin-top: 1rem;
-    margin-bottom: 10px; /* Space between items */
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #173927;
+    border-top: 2px dashed #2E5E4E;
+    padding-top: 10px;
 }
 
 /* ------------------ Footer Styling ------------------ */
@@ -172,55 +187,18 @@ body {
     color: #F5F5E9;
     text-align: center;
     font-size: 13px;
-    padding: 10px 0; /* Top and bottom padding */
-    width: 100%;
-    position: relative;
-    margin-top: 20px; 
+    padding: 20px 0;
+    margin-top: 40px;
     border-top: 2px solid whitesmoke;
-  
 }
-
 
 .footer-links a {
     color: #2E5E4E;
     text-decoration: none;
-    margin: 0 5px; /* Space between links */
-    
+    margin: 0 5px;
+    transition: color 0.3s ease;
 }
 
-
-/* Benefits Section Styles */
-.benefits {
-    margin-bottom: 20px; /* Adjust as needed */
-   
-}
-
-.benefit.card {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-
-
-
-/* Benefit Image Styling */
-.benefit-image {
-    width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 450px; /* Set a max height to keep the images uniform */
-    object-fit: cover; /* Ensures images cover the area without stretching */
-    border-radius: 5px; /* Optional: add rounded corners to the image */
-    margin-bottom: 10px; /* Space between image and text */
-}
-
-/* Title and Paragraph Styling */
-.card h3 {
-    color: #2E5E4E; /* Forest Green for the title */
-    margin: 10px 0; /* Space above and below title */
-    border-bottom: 2px dashed ;
-}
-
-.card p {
-    color: #333; /* Dark text color for the paragraph */
+.footer-links a:hover {
+    color: #D9C187;
 }
