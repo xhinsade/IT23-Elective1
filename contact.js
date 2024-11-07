@@ -107,3 +107,33 @@
         }
     });
 
+
+// Add event listener for the logout button
+document.getElementById('logout-button').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent the default link behavior
+
+  // Show a confirmation dialog
+  const isConfirmed = confirm("Are you sure you want to log out?");
+
+  if (isConfirmed) {
+    // If the user confirmed, log the action to the console
+    console.log("User confirmed logout. Logging out...");
+
+    // Clear session or local storage
+    localStorage.clear(); // Or use sessionStorage.clear() if necessary
+
+    // Optionally, clear cookies for authentication if you're using them
+    // document.cookie = "authToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+    // Display a logout confirmation message in an alert
+    alert("You have successfully logged out!");
+
+    // Redirect to login page or home page
+    window.location.href = 'login.html'; // Replace with your login page URL
+  } else {
+    // If the user canceled, log that to the console
+    console.log("User canceled logout.");
+  }
+});
+
+
