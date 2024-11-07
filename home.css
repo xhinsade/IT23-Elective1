@@ -74,6 +74,30 @@ body {
     max-width: 600px; /* Max width for larger screens */
     margin: 0 auto; /* Center the hero section */
 }
+/* Styling for the 'CwinX Offers:' title */
+.offers-title {
+    font-size: 2.5em; /* Make the title bigger */
+    font-weight: bold; /* Make the title bold */
+    color: #2E5E4E; /* Dark color for the text */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add space below the title */
+    display: inline-flex; /* Keep it inline with the pin icons */
+    justify-content: center; /* Center the text and pin horizontally */
+    align-items: center; /* Center the text and pin vertically */
+    letter-spacing: 5px; /* Space out the letters a little */
+    background-color:rgba(245, 245, 233, 0.9);
+    padding: 2rem;
+    border: 2px dashed #2E5E4E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styling the pin emojis */
+.pin {
+    font-size: 1.5em; /* Adjust the size of the pin */
+    margin: 0 10px; /* Space the pins out from the text */
+    color: #4CAF50; /* You can change the color of the pins */
+}
+
 
 .login-main h1 {
     font-size: 2.5rem; /* Increased size for main titles */
@@ -196,33 +220,81 @@ body {
 }
 
 
-/* Benefits Section Styles */
+/* General styling for benefits section */
+.benefits-container {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Styling the benefits wrapper to arrange cards */
 .benefits {
     display: flex;
-    justify-content: center; /* Centering the cards */
-    gap: 30px; /* Space between cards (increase as needed) */
-    flex-wrap: wrap; /* Wrap items on smaller screens */
-    padding: 20px; /* Add padding around the container */
+    justify-content: space-between; /* Distribute cards with space in between */
+    flex-wrap: wrap;
 }
 
+/* Styling each benefit card */
+.benefit.card {
+    width: 30%; /* Control width of each card */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
 
+/* Add hover effect on card */
+.benefit.card:hover {
+    transform: scale(1.05); /* Slightly scale the card on hover */
+}
 
-/* Benefit Image Styling */
+/* Card container to hold image, title, and description */
+.card-container {
+   
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Styling images inside the cards */
 .benefit-image {
-    width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 450px; /* Set a max height to keep the images uniform */
-    object-fit: cover; /* Ensures images cover the area without stretching */
-    border-radius: 5px; /* Optional: add rounded corners to the image */
-    margin-bottom: 10px; /* Space between image and text */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-/* Title and Paragraph Styling */
-.card h3 {
-    color: #2E5E4E; /* Forest Green for the title */
-    margin: 10px 0; /* Space above and below title */
+/* Title and text inside each card */
+.benefit.card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.card p {
-    color: #333; /* Dark text color for the paragraph */
+.benefit.card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Specific styles for each card (optional) */
+.benefit.card:nth-child(1) {
+    background-color: #f9f9f9; /* Light gray background for the first card */
+}
+
+.benefit.card:nth-child(2) {
+    background-color: #f9f9f9; /* Light gray background for the second card */
+}
+
+.benefit.card:nth-child(3) {
+    background-color: #f9f9f9; /* Light gray background for the third card */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .benefit.card {
+        width: 100%; /* Make each card take full width on smaller screens */
+    }
 }
