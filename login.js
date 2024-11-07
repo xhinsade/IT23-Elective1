@@ -79,3 +79,26 @@ toggleSignupPassword.addEventListener('click', function() {
   signupPasswordField.setAttribute('type', type);
   this.src = type === 'password' ? 'images/hidePassword.png' : 'images/seePassword.png'; // Change image based on visibility
 });
+
+// Login handling
+function handleLogin(event) {
+  event.preventDefault();
+
+  const username = document.getElementById('login-username').value;
+  const password = document.getElementById('login-password').value;
+
+  const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+  const user = existingUsers.find(user => user.username === username && user.password === password);
+
+  const notification = document.getElementById('login-notification');
+
+  if (user) {
+    alert('Login successful!');
+    // Redirect to home page if credentials are correct
+    window.location.href = 'home.html'; // This is where it redirects to home.html
+  } else {
+    notification.style.display = 'block';
+    notification.style.color = 'red'; // Set text color to red
+    notification.textContent = 'Invalid username or password.';
+  }
+}
