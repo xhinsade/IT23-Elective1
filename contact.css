@@ -51,7 +51,7 @@ body {
 
 /* Booking Form Styling */
 .booking-form {
-    background-color: rgba(245, 245, 233, 0.9);
+    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -62,7 +62,7 @@ body {
 
 /* General Styles for the Contact Section */
 .content-box {
-    background-color: #f9f9f9; /* Light background */
+    background-color:rgba(245, 245, 233, 0.9); /* Cream White with transparency */; /* Light background */
     padding: 20px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -174,6 +174,7 @@ body {
   max-width: 600px;
   width: 100%;
   margin-bottom: 20px;
+  background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
 }
 
 form input[type="text"],
@@ -190,21 +191,51 @@ form textarea {
     box-sizing: border-box;
 }
 
-/* Flexbox container for time fields */
+/* Ensures all labels in the booking form are aligned to the left */
+form label {
+    display: block; /* Makes the labels block elements so they take up the full width */
+    text-align: left; /* Aligns text inside labels to the left */
+    margin-bottom: 8px; /* Adds space below the label */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+/* Ensures inputs follow below the labels */
+form input, form select, form textarea {
+    width: 100%; /* Make inputs take up the full width of the container */
+    padding: 8px; /* Adds padding inside inputs for better spacing */
+    margin-bottom: 12px; /* Adds spacing between form fields */
+    border: 1px solid #ccc; /* Adds a border to inputs */
+    border-radius: 4px; /* Adds rounded corners to the inputs */
+}
+
+/* Ensure the time-row is displayed as flex for alignment */
 .time-row {
     display: flex;
-    gap: 20px; /* Space between start and end time boxes */
-    margin-bottom: 15px;
+    justify-content: space-between; /* Space out the time boxes evenly */
+    gap: 15px; /* Space between the two time boxes */
+    margin-bottom: 12px; /* Space below the row */
 }
 
+/* Ensure the individual time-boxes have even width */
 .time-box {
-    flex: 1; /* Ensures both time inputs take equal space */
+    flex: 1; /* Ensure both time boxes take equal space */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    
 }
 
-.time-box label,
+/* Style the labels and inputs for even alignment */
+.time-box label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;
+    text-align: left; /* Align label text to the left */
+}
+
 .time-box input {
-    display: block;
-    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensure the input takes up the full width of its container */
 }
 
 
@@ -251,6 +282,25 @@ footer {
     margin: 0 5px; /* Space between links */
     
 }
+/* Confirmation message styling */
+.confirmation-text {
+    text-align: left;
+    font-family: Arial, sans-serif; /* Optional: change the font */
+    font-size: 14px;
+    color: #333; /* Change text color */
+    line-height: 1.6; /* Optional: add line height for readability */
+}
+
+/* Ensure the modal content doesn't overflow */
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* You can adjust this as per your design */
+    max-width: 500px;
+    background-color: #fff;
+    overflow-y: auto; /* If content is large, scroll it */
+}
+
 
 /* Modal Styles */
 .modal {

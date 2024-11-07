@@ -24,7 +24,7 @@
     <a href="about.html">About Us</a>
     <a class="active" href="contact.html">Contact Us</a>
     <a href="services.html">Services</a>
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
  <!-- Font Awesome Logout Button -->
 <a href="#" id="logout-button">
     <i class="fas fa-sign-out-alt"></i>
@@ -68,10 +68,12 @@
         <label for="start-time">Start Time:</label>
         <input type="time" id="start-time" name="start-time" required onchange="setEndTime()">
     </div>
- <label for="end-time">End Time </label>
-<input type="time" id="end-time" name="end-time" required disabled>
-
+    <div class="time-box">
+        <label for="end-time">End Time:</label>
+        <input type="time" id="end-time" name="end-time" required disabled>
+    </div>
 </div>
+
 
 
 
@@ -114,7 +116,7 @@
     <div class="modal-content">
         <span class="close-button">&times;</span>
         <h2>Confirm Your Booking</h2>
-        <div id="confirmation-message"></div>
+      <div id="confirmation-message" class="confirmation-text"></div>
         <button id="cancel-button">Cancel</button>
         <button id="confirm-button">Confirm Booking</button>
     </div>
