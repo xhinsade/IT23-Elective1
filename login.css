@@ -151,3 +151,63 @@ body {
     font-size: 16px;
     border-top: solid 5px white;
 }
+
+/* Main form styling for Forgot Password */
+.forgot-password-main {
+    background-color: rgba(245, 245, 233, 0.9); /* Cream White with transparency */
+    text-align: center;
+    color: #2E5E4E; /* Forest Green for text */
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-color: #2E5E4E;
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input styling for Forgot Password */
+.forgot-password-main input {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #A9B7A3; /* Soft Sage Green */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button styling for Forgot Password */
+.forgot-password-main button {
+    margin-top: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #D9C187; /* Pale Gold */
+    color: #2E5E4E; /* Forest Green */
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+}
+
+.forgot-password-main button:hover {
+    background-color: #7A8865; /* Dusty Olive */
+}
+
+/* Focused input border styling */
+.forgot-password-main input:focus {
+    border-color: #2E5E4E; /* Forest Green */
+}
+
+/* Responsive design adjustments for Forgot Password */
+@media (max-width: 600px) {
+    .forgot-password-main input, .forgot-password-main button {
+        width: 90%;
+    }
+}
