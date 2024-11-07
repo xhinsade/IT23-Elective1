@@ -1,66 +1,53 @@
-/* ------------------ General Body Styling ------------------ */
+/* General Body Styling */
 body {
-  background-image: url("./images/background.jpeg");
-  /* Use your image URL */
+  background-image: url("images/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
+
 /* Header styling */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #173927; /* Forest Green */
-    padding: 2px;
-    border-bottom: 5px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #173927;
+  padding: 20px;
+  border-bottom: 5px solid white;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .header-left h1 {
-    font-size: 25px;
-    color: #F5F5E9; /* Cream White */
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    
+  font-size: 35px;
+  color: #F5F5E9;
+  margin-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
+
 .logo-img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-right: 3px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
 
-.header-right {
-    display: flex; /* Flex container */
-    gap: 15px; /* Space between links */
+.header-right a {
+  color: #F5F5E9;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
-.header a {
-    color: #F5F5E9; /* Cream White for links */
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 5px;
+.header-right a:hover {
+  background-color: rgba(121, 7, 64, 0.637);
+  padding: 5px;
+  border-radius: 5px;
 }
-
-.header a:hover {
-    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
-}
-
-
 /* ------------------ Header-left h1 Styling ------------------ */
 .header-left h1 {
     font-size: 35px; /* Font size */
@@ -240,3 +227,43 @@ footer {
     background-color: #7A8865; /* Darker color on hover */
 }
 
+/* Menu Icon Styling */
+.menu-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon .icon {
+    font-size: 35px; /* Adjust size as needed */
+    color: whitesmoke;     /* Icon color */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 120px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.menu-icon:hover .dropdown-menu {
+    display: block;
+}
