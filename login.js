@@ -52,7 +52,7 @@ function handleLogin(event) {
   if (user) {
     alert('Login successful!');
     // Redirect or show user dashboard
-    window.location.href = 'index.html'; // Change to your home page
+    window.location.href = 'home.html'; // Change to your home page
   } else {
     notification.style.display = 'block';
     notification.style.color = 'red'; // Set text color to red

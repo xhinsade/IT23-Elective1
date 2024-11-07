@@ -73,7 +73,7 @@ document.getElementById('logout-button').addEventListener('click', function(e) {
     alert("You have successfully logged out!");
 
     // Redirect to login page or home page
-    window.location.href = 'login.html'; // Replace with your login page URL
+    window.location.href = 'index.html'; // Replace with your login page URL
   } else {
     // If the user canceled, log that to the console
     console.log("User canceled logout.");
