@@ -52,29 +52,33 @@
         </main>
     
     
-        <!-- Signup Form -->
-        <main class="login-main" id="signup-main" style="display: none;">
-            <h2>Sign Up</h2>
-            <form id="signupForm" onsubmit="handleSignup(event)">
-                <div class="form-group">
-                    <label for="signup-username">Username:</label>
-                    <input type="text" id="signup-username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="signup-email">Email:</label>
-                    <input type="email" id="signup-email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="signup-password">Password:</label>
-                    <div class="password-container">
-                        <input type="password" id="signup-password" name="password" required>
-                        <img id="toggleSignupPassword" class="toggle-password" src="images/hidePassword.png" alt="Toggle Password Visibility">
-                    </div>
-                </div>
-                <button type="submit">SIGN UP</button>
-            </form>
-            <p>Already have an account? <a href="#" onclick="toggleForms()">Log in here</a></p>
-        </main>
+<main class="login-main" id="signup-main" style="display: none;">
+    <h2>Sign Up</h2>
+        <!-- Notification element for success or error messages -->
+    <div id="signup-notification" style="display: none;"></div>
+    <form id="signupForm" onsubmit="handleSignup(event)">
+        <div class="form-group">
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="signup-password" name="password" required>
+                <img id="toggleSignupPassword" class="toggle-password" src="images/hidePassword.png" alt="Toggle Password Visibility">
+            </div>
+        </div>
+        <button type="submit">SIGN UP</button>
+    </form>
+
+
+
+    <p>Already have an account? <a href="#" onclick="toggleForms()">Log in here</a></p>
+</main>
     </div>
 
     <footer class="footer">
