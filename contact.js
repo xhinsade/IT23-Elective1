@@ -119,12 +119,6 @@ document.getElementById('logout-button').addEventListener('click', function(e) {
     // If the user confirmed, log the action to the console
     console.log("User confirmed logout. Logging out...");
 
-    // Clear session or local storage
-    localStorage.clear(); // Or use sessionStorage.clear() if necessary
-
-    // Optionally, clear cookies for authentication if you're using them
-    // document.cookie = "authToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-
     // Display a logout confirmation message in an alert
     alert("You have successfully logged out!");
 
@@ -135,5 +129,4 @@ document.getElementById('logout-button').addEventListener('click', function(e) {
     console.log("User canceled logout.");
   }
 });
-
 
