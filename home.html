@@ -14,12 +14,13 @@
         <img src="images/logo.png" alt="CwinX Logo" class="logo-img">
       <h1> CwinX </h1>
     </div>
-    <div class="header-right">
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="services.html">Services</a>
-        <a class="active" href="home.html">Home</a>
-    </div>
+ <div class="header-right">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+    <a class="active" href="home.html">Home</a>
+    <a href="logout.html" class="logout-btn">Log Out</a>
+  </div>
 </div>
 
 
@@ -88,6 +89,22 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+document.querySelector('.logout-btn').addEventListener('click', function(event) {
+    // Prevent default link behavior
+    event.preventDefault();
+
+    // Confirm log-out action
+    const confirmLogout = confirm("Are you sure you want to log out?");
+    
+    if (confirmLogout) {
+        // Redirect to log-out page or perform log-out logic here
+        window.location.href = "login.html"; // Update this with your actual log-out URL
+    }
+});
+</script>
+
 
 </body>
 </html>
