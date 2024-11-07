@@ -42,7 +42,8 @@ body {
 .login-main input {
     display: block;
     margin: 10px auto;
-    width: 300px;
+    width: 100%; /* Ensure input boxes take the full width of the container */
+    max-width: 300px; /* Optional: Set a maximum width for larger screens */
     height: 40px;
     padding: 10px;
     border: 1px solid #A9B7A3; /* Soft Sage Green */
@@ -60,7 +61,8 @@ body {
     color: #2E5E4E; /* Forest Green */
     border: none;
     cursor: pointer;
-    width: 300px;
+    width: 100%; /* Make button span the full width */
+    max-width: 300px; /* Optional: Match the width of the input boxes */
     height: 40px;
 }
 
@@ -103,7 +105,7 @@ body {
 /* Style for the input inside the password container */
 .password-container input[type="password"],
 .password-container input[type="text"] {
-    width: 100%; /* Full width */
+    width: 100%; /* Full width for the password field */
     padding: 10px;
     box-sizing: border-box;
     font-size: 16px;
@@ -125,7 +127,7 @@ body {
 /* Responsive design adjustments */
 @media (max-width: 600px) {
     .login-main input, .login-main button {
-        width: 90%;
+        width: 90%; /* Full width on smaller screens */
     }
 }
 

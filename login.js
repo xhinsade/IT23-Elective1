@@ -44,21 +44,29 @@ function handleLogin(event) {
   const username = document.getElementById('login-username').value;
   const password = document.getElementById('login-password').value;
 
+  // Get users from localStorage
   const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-  const user = existingUsers.find(user => user.username === username && user.password === password);
+  const user = existingUsers.find(user => user.username === username);
 
   const notification = document.getElementById('login-notification');
+  notification.style.display = 'block'; // Make sure the notification is visible
 
-  if (user) {
-    alert('Login successful!');
-    // Redirect or show user dashboard
-    window.location.href = 'home.html'; // Change to your home page
+  if (!user) {
+    // Case 1: Username doesn't exist
+    notification.style.color = 'red';
+    notification.textContent = 'Account does not exist. Please sign up.';
+  } else if (user.password !== password) {
+    // Case 2: Username exists but password is incorrect
+    notification.style.color = 'red';
+    notification.textContent = 'Incorrect password. Please try again.';
   } else {
-    notification.style.display = 'block';
-    notification.style.color = 'red'; // Set text color to red
-    notification.textContent = 'Invalid username or password.';
+    // Case 3: Successful login
+    alert('Login successful!');
+    document.getElementById('loginForm').reset(); // Optional: Clear the form
+    window.location.href = 'home.html'; // Redirect to home page
   }
 }
+
 
 // Toggle password visibility for login form
 const toggleLoginPassword = document.getElementById('toggleLoginPassword');
