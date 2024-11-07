@@ -165,6 +165,29 @@ body {
     margin-bottom: 10px; /* Space between items */
 }
 
+/* Style for CTA button */
+.cta-btn {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 12px 20px; /* Padding for a comfortable size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.cta-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.cta-btn:active {
+    background-color: #397f3d; /* Even darker green when clicked */
+}
+
+
 /* ------------------ Footer Styling ------------------ */
 .footer {
     background-color: #7A8865;
@@ -218,3 +241,4 @@ body {
 .card p {
     color: #333; /* Dark text color for the paragraph */
 }
+
